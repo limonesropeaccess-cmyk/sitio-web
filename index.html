@@ -38,7 +38,7 @@ body {
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   padding: 0 clamp(1.5rem, 5vw, 4rem);
-  height: 60px;
+  height: 84px;
   display: flex; align-items: center; justify-content: space-between;
   border-bottom: 1px solid var(--line);
   background: rgba(14,15,14,0.9);
@@ -50,7 +50,7 @@ nav {
   height: 100%;
 }
 .nav-logo-img {
-  height: 38px;
+  height: 64px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -72,10 +72,10 @@ nav {
 
 /* ── HERO ── */
 .hero-badge {
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.2rem;
 }
 .hero-badge-img {
-  height: 96px;
+  height: 230px;
   width: auto;
   display: block;
 }
@@ -86,7 +86,7 @@ nav {
 }
 .hero-inner {
   max-width: 1100px; margin: 0 auto; width: 100%;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 .hero-label {
   display: flex; align-items: center; gap: 10px;
@@ -290,6 +290,10 @@ footer {
   .valor-right { grid-template-columns: 1fr; gap: .3rem; }
   .servicio-row { grid-template-columns: 1fr; gap: .8rem; }
   .serv-tags-inline { justify-content: flex-start; }
+  nav { height: 64px; }
+  .nav-logo-img { height: 46px; }
+  .hero-inner { padding-top: 90px; }
+  .hero-badge-img { height: 140px; }
 }
 
 /* ── GALLERY ── */
