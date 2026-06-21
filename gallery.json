@@ -1,8 +1,56 @@
 [
   {
+    "image": "images/galeria/albañileria-belgrano-pozo-aire-luz .jpeg",
+    "title": "Albañileria belgrano pozo aire luz ",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/albañileria-belgrano-pozo-aire-luz-2.jpeg",
+    "title": "Albañileria belgrano pozo aire luz 2",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/cambio-de-lona-bingo-averellaneda.png",
+    "title": "Cambio de lona bingo averellaneda",
+    "description": "",
+    "size": "portrait"
+  },
+  {
     "image": "images/galeria/fachada-pintura.jpg",
     "title": "Pintura de fachada",
     "description": "Trabajo en fachada de edificio residencial · CABA",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/pintura-de-contrafrente-Lascano .png",
+    "title": "Pintura de contrafrente Lascano ",
+    "description": "",
+    "size": "landscape"
+  },
+  {
+    "image": "images/galeria/pintura-de-medianera-cervantes-2 (2).jpeg",
+    "title": "Pintura de medianera cervantes 2 (2)",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/pintura-de-medianera-cervantes-2.jpeg",
+    "title": "Pintura de medianera cervantes 2",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/pintura-de-pozo-Lascano .jpeg",
+    "title": "Pintura de pozo Lascano ",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/pintura-de-pozo-cervantes-2.jpeg",
+    "title": "Pintura de pozo cervantes 2",
+    "description": "",
     "size": "portrait"
   },
   {
