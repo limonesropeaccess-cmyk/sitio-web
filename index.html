@@ -45,7 +45,7 @@ nav {
   backdrop-filter: blur(12px);
 }
 .nav-logo {
-  display: flex; align-items: center;
+  display: flex; align-items: center; gap: 16px;
   text-decoration: none;
   height: 100%;
 }
@@ -54,6 +54,17 @@ nav {
   width: auto;
   object-fit: contain;
   display: block;
+}
+.nav-tagline {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .03em;
+  color: var(--green);
+  text-transform: uppercase;
+  border-left: 1px solid var(--line);
+  padding-left: 16px;
+  margin-right: 24px;
+  white-space: nowrap;
 }
 .nav-right { display: flex; align-items: center; gap: 2.5rem; }
 .nav-right a {
@@ -292,6 +303,7 @@ footer {
   .serv-tags-inline { justify-content: flex-start; }
   nav { height: 64px; }
   .nav-logo-img { height: 46px; }
+  .nav-tagline { display: none; }
   .hero-inner { padding-top: 90px; }
   .hero-badge-img { height: 140px; }
 }
@@ -357,7 +369,8 @@ footer {
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <img src="images/logo-header.png" class="nav-logo-img" alt="Limones Rope Access · Trabajos en altura · CABA">
+    <img src="images/logo-header.png" class="nav-logo-img" alt="Limones Rope Access">
+    <span class="nav-tagline">Trabajos en alturas · Fachadas · Impermeabilizaciones</span>
   </a>
   <div class="nav-right">
     <a href="#servicios">Servicios</a>
