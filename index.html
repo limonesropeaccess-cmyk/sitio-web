@@ -84,27 +84,11 @@ nav {
 /* ── HERO ── */
 .hero-badge {
   margin-bottom: 2.2rem;
-  position: relative;
-  width: 230px;
 }
-.hero-badge-text {
-  width: 230px;
+.hero-badge-img {
+  height: 230px;
+  width: auto;
   display: block;
-}
-.hero-badge-gear {
-  position: absolute;
-  width: 158px;
-  left: 0px;
-  top: -169px;
-  transform-origin: 50% 50%;
-  animation: gear-spin-up 2.6s cubic-bezier(0.25, 0.1, 0.25, 1) 1;
-}
-@keyframes gear-spin-up {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(1080deg); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .hero-badge-gear { animation: none; }
 }
 .hero {
   min-height: 100vh;
@@ -113,7 +97,7 @@ nav {
 }
 .hero-inner {
   max-width: 1100px; margin: 0 auto; width: 100%;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 .hero-label {
   display: flex; align-items: center; gap: 10px;
@@ -320,10 +304,8 @@ footer {
   nav { height: 64px; }
   .nav-logo-img { height: 46px; }
   .nav-tagline { display: none; }
-  .hero-inner { padding-top: 130px; }
-  .hero-badge { width: 140px; }
-  .hero-badge-text { width: 140px; }
-  .hero-badge-gear { width: 96px; left: 0px; top: -103px; }
+  .hero-inner { padding-top: 90px; }
+  .hero-badge-img { height: 140px; }
 }
 
 /* ── GALLERY ── */
@@ -403,8 +385,7 @@ footer {
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-badge">
-      <img src="images/favicon.png" alt="" class="hero-badge-gear" aria-hidden="true">
-      <img src="images/logo-vertical-texto.png" alt="Limones Rope Access" class="hero-badge-text">
+      <img src="images/logo-vertical.png" alt="Limones Rope Access" class="hero-badge-img">
     </div>
     <div class="hero-label">
       <div class="hero-label-line"></div>
