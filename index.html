@@ -362,6 +362,100 @@ footer {
     min-height: 50vh !important;
   }
 }
+
+/* ── PROBLEMAS QUE RESOLVEMOS ── */
+.problemas-list {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 3rem;
+}
+.problema-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: 15px; color: var(--white); font-weight: 400;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.problema-icon {
+  color: var(--green); flex-shrink: 0; margin-top: 2px;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .problemas-list { grid-template-columns: 1fr; }
+}
+
+/* ── POR QUÉ NOS ELIGEN ── */
+.elige-list {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 3rem;
+}
+.elige-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: 15px; color: var(--white); font-weight: 400;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.elige-icon {
+  color: var(--green); flex-shrink: 0; margin-top: 2px;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .elige-list { grid-template-columns: 1fr; }
+}
+
+/* ── CÓMO TRABAJAMOS (PROCESO) ── */
+.proceso-list {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.proceso-item {
+  border-top: 2px solid var(--green);
+  padding-top: 1.2rem;
+}
+.proceso-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 13px; color: var(--gray); letter-spacing: .06em;
+  margin-bottom: .6rem;
+}
+.proceso-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem; font-weight: 600; color: var(--white);
+}
+@media (max-width: 768px) {
+  .proceso-list { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+}
+@media (max-width: 500px) {
+  .proceso-list { grid-template-columns: 1fr; }
+}
+
+/* ── TESTIMONIOS ── */
+.testimonios-list {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.testimonio-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.8rem;
+  background: rgba(255,255,255,0.02);
+}
+.testimonio-quote {
+  font-size: 14px; color: var(--white); line-height: 1.7;
+  font-weight: 300; margin-bottom: 1.2rem;
+}
+.testimonio-quote::before { content: "“"; color: var(--green); }
+.testimonio-quote::after { content: "”"; color: var(--green); }
+.testimonio-author { font-size: 13px; font-weight: 600; color: var(--white); }
+.testimonio-role { font-size: 12px; color: var(--gray); margin-top: 2px; }
+@media (max-width: 900px) {
+  .testimonios-list { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -392,33 +486,33 @@ footer {
       Acceso por cuerdas · Argentina
     </div>
     <h1 class="hero-title">
-      Llegamos<br>
-      donde <span class="green">otros</span><br>
-      <span class="gray">no llegan</span>
+      Resolución<br>
+      técnica de <span class="green">problemas</span><br>
+      <span class="gray">complejos en altura</span>
     </h1>
     <div class="hero-bottom">
       <p class="hero-desc">
-        Soluciones especializadas en trabajos verticales con los más altos estándares de seguridad, precisión y profesionalismo. Fachadas, impermeabilizaciones e instalaciones en altura, en entornos donde los métodos tradicionales no son viables.
+        Soluciones especializadas para filtraciones, fachadas, impermeabilización, instalaciones y restauración mediante técnicas de acceso por cuerdas. Intervenciones seguras, rápidas y rentables sin andamios.
       </p>
       <div class="hero-right-col">
         <div class="hero-stats">
           <div class="stat">
             <div class="stat-n"><span class="g">+</span>100</div>
-            <div class="stat-l">Trabajos</div>
+            <div class="stat-l">Intervenciones</div>
           </div>
           <div class="stat">
             <div class="stat-n">0</div>
-            <div class="stat-l">Accidentes</div>
+            <div class="stat-l">Incidentes</div>
           </div>
           <div class="stat">
-            <div class="stat-n" style="font-size:1.3rem;">Nacional</div>
-            <div class="stat-l">Cobertura</div>
+            <div class="stat-n" style="font-size:1.3rem;">40–70%</div>
+            <div class="stat-l">Menos logística</div>
           </div>
         </div>
         <div class="hero-cta">
           <a href="https://wa.me/5491171349126" target="_blank" class="btn-main">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.121 1.527 5.849L0 24l6.34-1.502A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.48-5.073-1.324l-.362-.215-3.763.892.908-3.666-.236-.375A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-            Pedir presupuesto
+            Solicitar diagnóstico técnico
           </a>
           <a href="#servicios" class="btn-ghost">Ver servicios <span class="arrow">→</span></a>
         </div>
@@ -441,32 +535,167 @@ footer {
       <div class="servicio-row">
         <div class="serv-num-big">01</div>
         <div class="serv-name-big">Trabajos en fachadas</div>
-        <div class="serv-desc-inline">Pintura, sellado, reparación y revestimiento de fachadas sin andamios. Menor costo y mayor velocidad sin interferir con el edificio en uso.</div>
+        <div class="serv-desc-inline">Pintura, reparación, sellado y restauración de fachadas sin andamios.</div>
         <div class="serv-tags-inline">
           <span class="stag">Pintura</span>
           <span class="stag">Sellado</span>
-          <span class="stag">Inspección</span>
+          <span class="stag">Restauración</span>
         </div>
       </div>
       <div class="servicio-row">
         <div class="serv-num-big">02</div>
-        <div class="serv-name-big">Impermeabilizaciones</div>
-        <div class="serv-desc-inline">Tratamiento de cubiertas, losas, tanques y juntas. Diagnóstico técnico y solución duradera en estructuras de difícil acceso.</div>
+        <div class="serv-name-big">Filtraciones y humedad</div>
+        <div class="serv-desc-inline">Diagnóstico y resolución de filtraciones complejas en medianeras y muros.</div>
         <div class="serv-tags-inline">
-          <span class="stag">Cubiertas</span>
-          <span class="stag">Losas</span>
-          <span class="stag">Tanques</span>
+          <span class="stag">Filtraciones</span>
+          <span class="stag">Humedad</span>
+          <span class="stag">Diagnóstico</span>
         </div>
       </div>
       <div class="servicio-row">
         <div class="serv-num-big">03</div>
-        <div class="serv-name-big">Instalaciones en altura</div>
-        <div class="serv-desc-inline">Montaje y mantenimiento de equipos, iluminación, señalética y estructuras en puntos elevados donde los métodos convencionales no son viables.</div>
+        <div class="serv-name-big">Impermeabilización</div>
+        <div class="serv-desc-inline">Tratamiento de cubiertas, losas, juntas y superficies críticas.</div>
         <div class="serv-tags-inline">
+          <span class="stag">Cubiertas</span>
+          <span class="stag">Losas</span>
+          <span class="stag">Juntas</span>
+        </div>
+      </div>
+      <div class="servicio-row">
+        <div class="serv-num-big">04</div>
+        <div class="serv-name-big">Gas y cañerías exteriores</div>
+        <div class="serv-desc-inline">Montaje, reparación y adecuación de instalaciones expuestas.</div>
+        <div class="serv-tags-inline">
+          <span class="stag">Gas</span>
+          <span class="stag">Cañerías</span>
+          <span class="stag">Montaje</span>
+        </div>
+      </div>
+      <div class="servicio-row">
+        <div class="serv-num-big">05</div>
+        <div class="serv-name-big">Instalaciones especiales</div>
+        <div class="serv-desc-inline">Cartelería, iluminación y estructuras elevadas.</div>
+        <div class="serv-tags-inline">
+          <span class="stag">Cartelería</span>
           <span class="stag">Iluminación</span>
-          <span class="stag">Señalética</span>
           <span class="stag">Estructuras</span>
         </div>
+      </div>
+      <div class="servicio-row">
+        <div class="serv-num-big">06</div>
+        <div class="serv-name-big">Restauración patrimonial</div>
+        <div class="serv-desc-inline">Restauración de molduras, cornisas y frentes históricos.</div>
+        <div class="serv-tags-inline">
+          <span class="stag">Patrimonio</span>
+          <span class="stag">Cornisas</span>
+          <span class="stag">Frentes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROBLEMAS QUE RESOLVEMOS ══ -->
+<div class="sep"></div>
+<section class="sec" id="problemas">
+  <div class="sec-inner">
+    <div class="sec-label">
+      <div class="sec-label-line"></div>
+      Problemas
+    </div>
+    <h2 class="sec-title">Problemas que<br>resolvemos</h2>
+    <p style="color:var(--gray2);font-size:15px;font-weight:300;line-height:1.7;margin-top:14px;max-width:560px;">Ayudamos a resolver patologías edilicias complejas en sectores donde los métodos tradicionales resultan costosos o inviables.</p>
+    <div class="problemas-list">
+      <div class="problema-item"><span class="problema-icon">●</span> Filtraciones recurrentes</div>
+      <div class="problema-item"><span class="problema-icon">●</span> Revoques desprendidos</div>
+      <div class="problema-item"><span class="problema-icon">●</span> Riesgo de caída de material</div>
+      <div class="problema-item"><span class="problema-icon">●</span> Caños deteriorados</div>
+      <div class="problema-item"><span class="problema-icon">●</span> Fachadas envejecidas</div>
+      <div class="problema-item"><span class="problema-icon">●</span> Sectores inaccesibles sin andamios</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ POR QUÉ NOS ELIGEN ══ -->
+<div class="sep"></div>
+<section class="sec" id="por-que-elegirnos">
+  <div class="sec-inner">
+    <div class="sec-label">
+      <div class="sec-label-line"></div>
+      Por qué
+    </div>
+    <h2 class="sec-title">Por qué<br>nos eligen</h2>
+    <div class="elige-list">
+      <div class="elige-item"><span class="elige-icon">✓</span> Seguridad como valor no negociable</div>
+      <div class="elige-item"><span class="elige-icon">✓</span> Diagnóstico técnico preciso</div>
+      <div class="elige-item"><span class="elige-icon">✓</span> Menor costo operativo</div>
+      <div class="elige-item"><span class="elige-icon">✓</span> Menor tiempo de ejecución</div>
+      <div class="elige-item"><span class="elige-icon">✓</span> Especialistas en alta complejidad</div>
+      <div class="elige-item"><span class="elige-icon">✓</span> Equipo altamente capacitado</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CÓMO TRABAJAMOS ══ -->
+<div class="sep"></div>
+<section class="sec" id="proceso">
+  <div class="sec-inner">
+    <div class="sec-label">
+      <div class="sec-label-line"></div>
+      Proceso
+    </div>
+    <h2 class="sec-title">Cómo<br>trabajamos</h2>
+    <div class="proceso-list">
+      <div class="proceso-item">
+        <div class="proceso-num">01</div>
+        <div class="proceso-name">Diagnóstico</div>
+      </div>
+      <div class="proceso-item">
+        <div class="proceso-num">02</div>
+        <div class="proceso-name">Propuesta técnica</div>
+      </div>
+      <div class="proceso-item">
+        <div class="proceso-num">03</div>
+        <div class="proceso-name">Ejecución</div>
+      </div>
+      <div class="proceso-item">
+        <div class="proceso-num">04</div>
+        <div class="proceso-name">Entrega</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIOS ══ -->
+<!--
+  PLACEHOLDER: reemplazar estos 3 testimonios por los reales.
+  Cada tarjeta necesita: la frase del cliente, su nombre y un dato
+  de contexto (cargo, edificio, barrio, etc.)
+-->
+<div class="sep"></div>
+<section class="sec" id="testimonios">
+  <div class="sec-inner">
+    <div class="sec-label">
+      <div class="sec-label-line"></div>
+      Opiniones
+    </div>
+    <h2 class="sec-title">Lo que dicen<br>nuestros clientes</h2>
+    <div class="testimonios-list">
+      <div class="testimonio-card">
+        <div class="testimonio-quote">[PLACEHOLDER — Reemplazar por testimonio real del cliente 1]</div>
+        <div class="testimonio-author">[Nombre del cliente]</div>
+        <div class="testimonio-role">[Cargo / Edificio / Barrio]</div>
+      </div>
+      <div class="testimonio-card">
+        <div class="testimonio-quote">[PLACEHOLDER — Reemplazar por testimonio real del cliente 2]</div>
+        <div class="testimonio-author">[Nombre del cliente]</div>
+        <div class="testimonio-role">[Cargo / Edificio / Barrio]</div>
+      </div>
+      <div class="testimonio-card">
+        <div class="testimonio-quote">[PLACEHOLDER — Reemplazar por testimonio real del cliente 3]</div>
+        <div class="testimonio-author">[Nombre del cliente]</div>
+        <div class="testimonio-role">[Cargo / Edificio / Barrio]</div>
       </div>
     </div>
   </div>
