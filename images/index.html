@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limones Rope Access · Trabajos en Altura</title>
+<meta property="og:title" content="Limones Rope Access · Trabajos en Altura">
+<meta property="og:description" content="Soluciones especializadas en trabajos verticales mediante técnicas de acceso por cuerdas. CABA y todo el país.">
+<meta property="og:url" content="https://www.limonesropeaccess.com">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://www.limonesropeaccess.com">
+<meta name="description" content="Soluciones especializadas en trabajos verticales mediante técnicas de acceso por cuerdas. CABA y todo el país.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #0e0f0e;
+  --green:   #c8f000;
+  --white:   #f0f0ec;
+  --gray:    #6b7060;
+  --gray2:   #9a9f8e;
+  --line:    rgba(255,255,255,0.08);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  height: 84px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  background: rgba(14,15,14,0.9);
+  backdrop-filter: blur(12px);
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 16px;
+  text-decoration: none;
+  height: 100%;
+}
+.nav-logo-img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+.nav-tagline {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .03em;
+  color: var(--green);
+  text-transform: uppercase;
+  border-left: 1px solid var(--line);
+  padding-left: 16px;
+  margin-right: 24px;
+  white-space: nowrap;
+}
+.nav-right { display: flex; align-items: center; gap: 2.5rem; }
+.nav-right a {
+  font-size: 13px; color: var(--gray2); text-decoration: none;
+  font-weight: 400; transition: color .2s;
+}
+.nav-right a:hover { color: var(--white); }
+.nav-cta {
+  color: var(--bg) !important;
+  background: var(--green);
+  padding: 7px 18px; border-radius: 6px;
+  font-size: 13px !important; font-weight: 600 !important;
+  transition: opacity .2s !important;
+}
+.nav-cta:hover { opacity: .85 !important; }
+
+/* ── HERO ── */
+.hero-badge {
+  margin-bottom: 2.2rem;
+}
+.hero-badge-img {
+  height: 230px;
+  width: auto;
+  display: block;
+}
+.hero {
+  min-height: 100vh;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  display: flex; align-items: center;
+}
+.hero-inner {
+  max-width: 1100px; margin: 0 auto; width: 100%;
+  padding-top: 100px;
+}
+.hero-label {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 11px; font-weight: 500; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--green);
+  margin-bottom: 2.5rem;
+}
+.hero-label-line {
+  width: 32px; height: 1px; background: var(--green); flex-shrink: 0;
+}
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 10vw, 9.5rem);
+  font-weight: 700; line-height: .96;
+  letter-spacing: .04em; font-weight: 400;
+  color: var(--white);
+  margin-bottom: 2.5rem;
+}
+.hero-title .green { color: var(--green); }
+.hero-title .gray { color: var(--gray); }
+
+.hero-bottom {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 4rem; align-items: end;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+.hero-desc {
+  font-size: 15px; color: rgba(230,232,216,0.9); line-height: 1.8;
+  font-weight: 300; text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.hero-right-col {
+  display: flex; flex-direction: column;
+  align-items: flex-end; gap: 2rem;
+}
+.hero-stats {
+  display: flex; gap: 3rem;
+}
+.stat { text-align: right; }
+.stat-n {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem; font-weight: 700; color: var(--white);
+  line-height: 1;
+}
+.stat-n .g { color: var(--green); }
+.stat-l { font-size: 11px; color: var(--gray); margin-top: 4px; letter-spacing: .04em; text-transform: uppercase; }
+.hero-cta { display: flex; gap: 12px; align-items: center; }
+.btn-main {
+  background: var(--green); color: var(--bg);
+  padding: 12px 26px; border-radius: 6px;
+  font-size: 14px; font-weight: 600; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+  transition: opacity .2s;
+  white-space: nowrap;
+}
+.btn-main:hover { opacity: .85; }
+.btn-ghost {
+  color: var(--gray2); font-size: 14px; text-decoration: none;
+  font-weight: 400; transition: color .2s;
+  display: flex; align-items: center; gap: 6px;
+}
+.btn-ghost:hover { color: var(--white); }
+.arrow { display: inline-block; transition: transform .2s; }
+.btn-ghost:hover .arrow { transform: translateX(3px); }
+
+/* ── SEPARADOR ── */
+.sep {
+  height: 1px; background: var(--line);
+  margin: 0 clamp(1.5rem, 5vw, 4rem);
+}
+
+/* ── SECCIÓN GENÉRICA ── */
+.sec {
+  padding: 100px clamp(1.5rem, 5vw, 4rem);
+}
+.sec-inner { max-width: 1100px; margin: 0 auto; }
+
+.sec-label {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 11px; font-weight: 500; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--green);
+  margin-bottom: 1.5rem;
+}
+.sec-label-line { width: 24px; height: 1px; background: var(--green); flex-shrink: 0; }
+
+.sec-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 700; line-height: 1.06;
+  letter-spacing: .05em; color: var(--white);
+}
+
+/* ── MISIÓN / VISIÓN ── */
+.mv-layout {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 6rem; align-items: start;
+  margin-top: 4rem;
+}
+.mv-block { }
+.mv-tag {
+  font-size: 11px; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--green);
+  margin-bottom: 1rem;
+}
+.mv-head {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem; font-weight: 600; color: var(--white);
+  margin-bottom: 1rem; line-height: 1.2;
+}
+.mv-text { font-size: 14px; color: var(--gray2); line-height: 1.85; font-weight: 300; }
+
+/* ── VALORES ── */
+.valores-list {
+  margin-top: 4rem;
+  display: flex; flex-direction: column;
+}
+.valor-row {
+  display: grid; grid-template-columns: 200px 1fr;
+  gap: 3rem; align-items: baseline;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+  transition: background .15s;
+}
+.valor-row:first-child { border-top: 1px solid var(--line); }
+.valor-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 11px; font-weight: 500; color: var(--gray);
+  letter-spacing: .08em;
+}
+.valor-right { display: grid; grid-template-columns: 220px 1fr; gap: 2rem; align-items: baseline; }
+.valor-name { font-size: 15px; font-weight: 500; color: var(--white); }
+.valor-desc { font-size: 14px; color: var(--gray2); line-height: 1.7; font-weight: 300; }
+
+/* ── SERVICIOS ── */
+.servicios-list { margin-top: 4rem; }
+.servicio-row {
+  display: grid; grid-template-columns: 60px 1fr 1fr auto;
+  gap: 2rem; align-items: center;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--line);
+  transition: opacity .2s;
+}
+.servicio-row:first-child { border-top: 1px solid var(--line); }
+.servicio-row:hover .serv-num-big { color: var(--green); }
+.serv-num-big {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 11px; font-weight: 600; color: var(--gray);
+  letter-spacing: .06em; transition: color .2s;
+}
+.serv-name-big { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; font-weight: 600; color: var(--white); }
+.serv-desc-inline { font-size: 13px; color: var(--gray2); line-height: 1.65; font-weight: 300; }
+.serv-tags-inline { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.stag {
+  font-size: 11px; color: var(--gray);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 3px 10px; border-radius: 20px;
+}
+
+/* ── CTA ── */
+.cta-sec {
+  padding: 100px clamp(1.5rem, 5vw, 4rem);
+  display: flex; align-items: center; justify-content: center;
+}
+.cta-inner { max-width: 680px; width: 100%; text-align: center; }
+.cta-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700; line-height: 1.05; letter-spacing: -.025em;
+  color: var(--white); margin-bottom: 1.2rem;
+}
+.cta-title .g { color: var(--green); }
+.cta-sub { font-size: 15px; color: var(--gray2); line-height: 1.7; margin-bottom: 2.5rem; font-weight: 300; }
+.cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cta-info { font-size: 12px; color: var(--gray); margin-top: 1.2rem; letter-spacing: .02em; }
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 32px clamp(1.5rem, 5vw, 4rem);
+}
+.footer-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
+}
+.footer-name { font-family: 'Bebas Neue', sans-serif; font-size: 14px; font-weight: 600; color: var(--white); }
+.footer-name span { color: var(--green); }
+.footer-sub { font-size: 12px; color: var(--gray); margin-top: 2px; }
+.footer-links { display: flex; gap: 2rem; }
+.footer-links a { font-size: 13px; color: var(--gray); text-decoration: none; transition: color .2s; }
+.footer-links a:hover { color: var(--white); }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .hero-bottom { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-right-col { align-items: flex-start; }
+  .hero-stats { justify-content: flex-start; }
+  .stat { text-align: left; }
+  .nav-right a:not(.nav-cta) { display: none; }
+  .mv-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .valor-row { grid-template-columns: 1fr; gap: .5rem; }
+  .valor-right { grid-template-columns: 1fr; gap: .3rem; }
+  .servicio-row { grid-template-columns: 1fr; gap: .8rem; }
+  .serv-tags-inline { justify-content: flex-start; }
+  nav { height: 64px; }
+  .nav-logo-img { height: 46px; }
+  .nav-tagline { display: none; }
+  .hero-inner { padding-top: 90px; }
+  .hero-badge-img { height: 140px; }
+}
+
+/* ── GALLERY ── */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 3rem;
+}
+.gal-item {
+  position: relative; overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #111;
+}
+.gal-item.gal-portrait { grid-row: span 2; }
+.gal-item img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  transition: transform .5s ease, filter .4s ease;
+  filter: grayscale(20%) brightness(.92);
+}
+.gal-item:hover img {
+  transform: scale(1.04);
+  filter: grayscale(0%) brightness(1);
+}
+.gal-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.75) 0%, transparent 50%);
+  opacity: 0; transition: opacity .3s;
+  display: flex; align-items: flex-end; padding: 20px;
+}
+.gal-item:hover .gal-overlay { opacity: 1; }
+.gal-title { font-family: 'Bebas Neue', sans-serif; font-size: 14px; font-weight: 600; color: #f0f0ec; margin-bottom: 3px; }
+.gal-desc  { font-size: 12px; color: var(--gray2); line-height: 1.5; }
+.gal-item.gal-portrait { min-height: 500px; }
+.gal-item.gal-landscape { min-height: 240px; }
+
+@media (max-width: 768px) {
+  .gallery { grid-template-columns: 1fr 1fr; }
+  .gal-item.gal-portrait { grid-row: span 1; min-height: 260px; }
+  .gal-item.gal-landscape { min-height: 200px; }
+}
+@media (max-width: 500px) {
+  .gallery { grid-template-columns: 1fr; }
+}
+
+
+@media (max-width: 900px) {
+  section[style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+  section[style*="grid-template-columns:1fr 1fr"] > div:last-child {
+    min-height: 50vh !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="images/logo-header.png" class="nav-logo-img" alt="Limones Rope Access">
+    <span class="nav-tagline">Trabajos en alturas · Fachadas · Impermeabilizaciones</span>
+  </a>
+  <div class="nav-right">
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+    <a href="https://wa.me/5491171349126" target="_blank" class="nav-cta">Presupuesto</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <img src="images/logo-vertical.png" alt="Limones Rope Access" class="hero-badge-img">
+    </div>
+    <div class="hero-label">
+      <div class="hero-label-line"></div>
+      Acceso por cuerdas · Argentina
+    </div>
+    <h1 class="hero-title">
+      Llegamos<br>
+      donde <span class="green">otros</span><br>
+      <span class="gray">no llegan</span>
+    </h1>
+    <div class="hero-bottom">
+      <p class="hero-desc">
+        Soluciones especializadas en trabajos verticales con los más altos estándares de seguridad, precisión y profesionalismo. Fachadas, impermeabilizaciones e instalaciones en altura, en entornos donde los métodos tradicionales no son viables.
+      </p>
+      <div class="hero-right-col">
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-n"><span class="g">+</span>100</div>
+            <div class="stat-l">Trabajos</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">0</div>
+            <div class="stat-l">Accidentes</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n" style="font-size:1.3rem;">Nacional</div>
+            <div class="stat-l">Cobertura</div>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="https://wa.me/5491171349126" target="_blank" class="btn-main">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.121 1.527 5.849L0 24l6.34-1.502A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.48-5.073-1.324l-.362-.215-3.763.892.908-3.666-.236-.375A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Pedir presupuesto
+          </a>
+          <a href="#servicios" class="btn-ghost">Ver servicios <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICIOS ══ -->
+<div class="sep"></div>
+<section class="sec" id="servicios">
+  <div class="sec-inner">
+    <div class="sec-label">
+      <div class="sec-label-line"></div>
+      Qué hacemos
+    </div>
+    <h2 class="sec-title">Soluciones verticales<br>de alta complejidad</h2>
+    <div class="servicios-list">
+      <div class="servicio-row">
+        <div class="serv-num-big">01</div>
+        <div class="serv-name-big">Trabajos en fachadas</div>
+        <div class="serv-desc-inline">Pintura, sellado, reparación y revestimiento de fachadas sin andamios. Menor costo y mayor velocidad sin interferir con el edificio en uso.</div>
+        <div class="serv-tags-inline">
+          <span class="stag">Pintura</span>
+          <span class="stag">Sellado</span>
+          <span class="stag">Inspección</span>
+        </div>
+      </div>
+      <div class="servicio-row">
+        <div class="serv-num-big">02</div>
+        <div class="serv-name-big">Impermeabilizaciones</div>
+        <div class="serv-desc-inline">Tratamiento de cubiertas, losas, tanques y juntas. Diagnóstico técnico y solución duradera en estructuras de difícil acceso.</div>
+        <div class="serv-tags-inline">
+          <span class="stag">Cubiertas</span>
+          <span class="stag">Losas</span>
+          <span class="stag">Tanques</span>
+        </div>
+      </div>
+      <div class="servicio-row">
+        <div class="serv-num-big">03</div>
+        <div class="serv-name-big">Instalaciones en altura</div>
+        <div class="serv-desc-inline">Montaje y mantenimiento de equipos, iluminación, señalética y estructuras en puntos elevados donde los métodos convencionales no son viables.</div>
+        <div class="serv-tags-inline">
+          <span class="stag">Iluminación</span>
+          <span class="stag">Señalética</span>
+          <span class="stag">Estructuras</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NOSOTROS ══ -->
+<div class="sep"></div>
+<section class="sec" id="nosotros">
+  <div class="sec-inner">
+    <div class="sec-label">
+      <div class="sec-label-line"></div>
+      Quiénes somos
+    </div>
+    <h2 class="sec-title">Una cultura construida<br>sobre valores reales</h2>
+
+    <div class="mv-layout">
+      <div class="mv-block">
+        <div class="mv-tag">Misión</div>
+        <div class="mv-head">Por qué hacemos lo que hacemos</div>
+        <div class="mv-text">Brindar soluciones especializadas en trabajos verticales mediante técnicas de acceso por cuerdas, ejecutando intervenciones de alta complejidad con los más altos estándares de seguridad, precisión y profesionalismo. Nos comprometemos a ofrecer respuestas eficientes, minimizando tiempos, costos operativos y riesgos, incluso en entornos donde los métodos tradicionales no resultan viables.</div>
+      </div>
+      <div class="mv-block">
+        <div class="mv-tag">Visión</div>
+        <div class="mv-head">Hacia dónde nos dirigimos</div>
+        <div class="mv-text">Ser la empresa referente en Argentina en trabajos de acceso por cuerdas, reconocida por la excelencia técnica, la cultura de seguridad y la calidad humana de nuestro equipo. Aspiramos a profesionalizar el sector, elevar sus estándares y consolidarnos como una escuela formadora de especialistas verticales que representen nuestros valores en todo el país.</div>
+      </div>
+    </div>
+
+    <div class="valores-list">
+      <div class="valor-row">
+        <div class="valor-num">01 — Seguridad</div>
+        <div class="valor-right">
+          <div class="valor-name">Seguridad primero</div>
+          <div class="valor-desc">La seguridad no es negociable. Cada maniobra, procedimiento y decisión se ejecuta priorizando la integridad de las personas y del entorno.</div>
+        </div>
+      </div>
+      <div class="valor-row">
+        <div class="valor-num">02 — Excelencia</div>
+        <div class="valor-right">
+          <div class="valor-name">Excelencia profesional</div>
+          <div class="valor-desc">Superamos expectativas mediante trabajo preciso, prolijo y técnicamente impecable en cada intervención.</div>
+        </div>
+      </div>
+      <div class="valor-row">
+        <div class="valor-num">03 — Ética</div>
+        <div class="valor-right">
+          <div class="valor-name">Ética y transparencia</div>
+          <div class="valor-desc">Construimos relaciones basadas en honestidad, respeto y cumplimiento de la palabra dada.</div>
+        </div>
+      </div>
+      <div class="valor-row">
+        <div class="valor-num">04 — Compromiso</div>
+        <div class="valor-right">
+          <div class="valor-name">Compromiso y responsabilidad</div>
+          <div class="valor-desc">Asumimos cada proyecto con seriedad, puntualidad y sentido de pertenencia, respondiendo por cada detalle del servicio.</div>
+        </div>
+      </div>
+      <div class="valor-row">
+        <div class="valor-num">05 — Innovación</div>
+        <div class="valor-right">
+          <div class="valor-name">Innovación continua</div>
+          <div class="valor-desc">Mejoramos constantemente nuestros procesos, incorporando nuevas técnicas, conocimientos y tecnologías.</div>
+        </div>
+      </div>
+      <div class="valor-row">
+        <div class="valor-num">06 — Equipo</div>
+        <div class="valor-right">
+          <div class="valor-name">Trabajo en equipo</div>
+          <div class="valor-desc">Creemos en la colaboración, la lealtad y el apoyo mutuo como pilares para alcanzar resultados extraordinarios.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ PROYECTOS ══ -->
+<div class="sep"></div>
+<section class="sec" id="proyectos">
+  <div class="sec-inner">
+    <div class="sec-label">
+      <div class="sec-label-line"></div>
+      Trabajos realizados
+    </div>
+    <h2 class="sec-title">El equipo en<br>acción</h2>
+    <p style="color:var(--gray2);font-size:15px;font-weight:300;line-height:1.7;margin-top:14px;max-width:520px;">Cada imagen es un trabajo real. Sin andamios, sin grúas — solo técnica, equipo y altura.</p>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<div class="sep"></div>
+<section class="cta-sec" id="contacto">
+  <div class="cta-inner">
+    <h2 class="cta-title">¿Trabajo en altura<br>que <span class="g">resolver</span>?</h2>
+    <p class="cta-sub">Contanos qué necesitás. Respondemos rápido y sin compromiso. Operamos en CABA y todo el país.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/5491171349126" target="_blank" class="btn-main">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.121 1.527 5.849L0 24l6.34-1.502A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.48-5.073-1.324l-.362-.215-3.763.892.908-3.666-.236-.375A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Escribir por WhatsApp
+      </a>
+      <a href="mailto:limonesropeaccess@gmail.com" class="btn-ghost">limonesropeaccess@gmail.com <span class="arrow">→</span></a>
+    </div>
+    <div class="cta-info">+54 9 11 7134 9126 · Ciudad Autónoma de Buenos Aires</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-name">Limones <span>·</span> Rope Access</div>
+      <div class="footer-sub">Trabajos en altura · Fachadas · Impermeabilizaciones · CABA y todo el país</div>
+    </div>
+    <div class="footer-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Carga dinámica de la galería desde gallery.json
+  // Para agregar/editar/quitar fotos: editá ese archivo, no este HTML.
+  fetch('gallery.json')
+    .then(res => res.json())
+    .then(items => {
+      const gallery = document.getElementById('gallery');
+      gallery.innerHTML = items.map(item => `
+        <div class="gal-item gal-${item.size}">
+          <img src="${item.image}" alt="${item.title}" loading="lazy">
+          <div class="gal-overlay">
+            <div class="gal-info">
+              <div class="gal-title">${item.title}</div>
+              <div class="gal-desc">${item.description}</div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    })
+    .catch(err => console.error('No se pudo cargar gallery.json:', err));
+</script>
+
+</body>
+</html>
