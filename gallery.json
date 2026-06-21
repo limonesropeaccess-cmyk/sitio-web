@@ -1,18 +1,18 @@
 [
   {
-    "image": "images/galeria/fachada-pintura.jpg",
+    "image": "images/fachada-pintura.jpg",
     "title": "Pintura de fachada",
     "description": "Trabajo en fachada de edificio residencial · CABA",
     "size": "portrait"
   },
   {
-    "image": "images/galeria/preparacion-equipo.jpg",
+    "image": "images/preparacion-equipo.jpg",
     "title": "Preparación de equipo",
     "description": "Briefing de seguridad en azotea previo a descenso",
     "size": "landscape"
   },
   {
-    "image": "images/galeria/sellado-junta.jpg",
+    "image": "images/sellado-junta.jpg",
     "title": "Sellado de junta en fachada",
     "description": "Sellado y reparación en fachada de vidrio · CABA",
     "size": "portrait"
