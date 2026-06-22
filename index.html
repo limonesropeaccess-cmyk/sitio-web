@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://www.limonesropeaccess.com/images/logo-header.png">
 <link rel="canonical" href="https://www.limonesropeaccess.com">
 <meta name="description" content="Empresa de trabajos en altura en Buenos Aires. Especialistas en fachadas, filtraciones, impermeabilización y acceso por cuerdas.">
-<meta name="keywords" content="trabajos en altura, rope access, silleteros, silleta, silletero, acceso por cuerdas, fachadas, filtraciones, impermeabilización, restauración patrimonial, Buenos Aires, CABA, GBA">
+<meta name="keywords" content="trabajos en altura, rope access, acceso por cuerdas, fachadas, filtraciones, impermeabilización, restauración patrimonial, Buenos Aires, CABA, GBA">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="images/favicon.png">
 <script type="application/ld+json">
@@ -491,6 +491,72 @@ footer {
 @media (max-width: 900px) {
   .testimonios-list { grid-template-columns: 1fr; }
 }
+
+/* ── WHATSAPP FLOTANTE ── */
+.wa-float {
+  position: fixed;
+  bottom: 24px; right: 24px;
+  z-index: 200;
+  display: flex; flex-direction: column; align-items: flex-end;
+  gap: 12px;
+}
+.wa-float-btn {
+  width: 58px; height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  border: none;
+  transition: transform .2s, box-shadow .2s;
+}
+.wa-float-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+.wa-float-btn svg { width: 28px; height: 28px; fill: #ffffff; }
+
+.wa-menu {
+  display: flex; flex-direction: column;
+  gap: 8px;
+  margin-bottom: 4px;
+  opacity: 0; transform: translateY(8px) scale(.98);
+  pointer-events: none;
+  transition: opacity .18s, transform .18s;
+  max-width: 280px;
+}
+.wa-menu.open {
+  opacity: 1; transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+.wa-menu-title {
+  font-size: 12px; color: var(--gray2);
+  text-transform: uppercase; letter-spacing: .05em;
+  margin-bottom: 2px;
+  text-align: right;
+}
+.wa-menu-item {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--white);
+  font-size: 13px; font-weight: 400;
+  text-align: right;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color .2s, background .2s;
+  white-space: normal;
+  line-height: 1.4;
+  display: block;
+}
+.wa-menu-item:hover {
+  border-color: var(--green);
+  background: rgba(200,240,0,0.06);
+}
+@media (max-width: 600px) {
+  .wa-float { right: 16px; bottom: 16px; }
+  .wa-menu { max-width: calc(100vw - 32px); }
+}
 </style>
 </head>
 <body>
@@ -520,11 +586,11 @@ footer {
       <div class="hero-label-line"></div>
       Acceso por cuerdas · Argentina
     </div>
-   <h1 class="hero-title">
-  Resolución<br>
-  técnica de <span class="green">problemas</span><br>
-  <span class="gray">en alturas</span>
-</h1>
+    <h1 class="hero-title">
+      Resolución<br>
+      técnica de <span class="green">problemas</span><br>
+      <span class="gray">complejos en altura</span>
+    </h1>
     <div class="hero-bottom">
       <p class="hero-desc">
         Soluciones especializadas para filtraciones, fachadas, impermeabilización, instalaciones y restauración mediante técnicas de acceso por cuerdas. Intervenciones seguras, rápidas y rentables sin andamios.
@@ -853,6 +919,35 @@ footer {
     </div>
   </div>
 </footer>
+
+<!-- ══ WHATSAPP FLOTANTE ══ -->
+<div class="wa-float">
+  <div class="wa-menu" id="wa-menu">
+    <div class="wa-menu-title">¿En qué te ayudamos?</div>
+    <a href="https://wa.me/5491171349126?text=Hola%2C%20nos%20intimaron%20por%20el%20estado%20de%20la%20fachada%20y%20necesito%20asesoramiento" target="_blank" class="wa-menu-item">¿Te intimaron por el mal estado de la fachada?</a>
+    <a href="https://wa.me/5491171349126?text=Hola%2C%20no%20s%C3%A9%20qu%C3%A9%20necesita%20mi%20edificio%20para%20pintar%20o%20refaccionar" target="_blank" class="wa-menu-item">¿No sabés qué necesita tu edificio para pintar o refaccionar?</a>
+    <a href="https://wa.me/5491171349126?text=Hola%2C%20tengo%20humedad%20o%20filtraciones%20recurrentes" target="_blank" class="wa-menu-item">¿Tenés humedad, filtraciones o goteras recurrentes?</a>
+    <a href="https://wa.me/5491171349126?text=Hola%2C%20noto%20grietas%20o%20desprendimientos%20en%20balcones%20o%20frente" target="_blank" class="wa-menu-item">¿Notás grietas o desprendimientos en balcones o frente?</a>
+    <a href="https://wa.me/5491171349126?text=Hola%2C%20necesito%20un%20diagn%C3%B3stico%20t%C3%A9cnico%20antes%20de%20invertir" target="_blank" class="wa-menu-item">¿Necesitás un diagnóstico técnico confiable antes de invertir?</a>
+  </div>
+  <button class="wa-float-btn" id="wa-toggle" aria-label="Abrir menú de WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.121 1.527 5.849L0 24l6.34-1.502A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.48-5.073-1.324l-.362-.215-3.763.892.908-3.666-.236-.375A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  </button>
+</div>
+
+<script>
+  // Botón flotante de WhatsApp: abre/cierra el menú de opciones
+  const waToggle = document.getElementById('wa-toggle');
+  const waMenu = document.getElementById('wa-menu');
+  waToggle.addEventListener('click', () => {
+    waMenu.classList.toggle('open');
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.wa-float')) {
+      waMenu.classList.remove('open');
+    }
+  });
+</script>
 
 <script>
   // Carga dinámica de la galería desde gallery.json
