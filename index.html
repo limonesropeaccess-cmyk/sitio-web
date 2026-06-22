@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://www.limonesropeaccess.com/images/logo-header.png">
 <link rel="canonical" href="https://www.limonesropeaccess.com">
 <meta name="description" content="Empresa de trabajos en altura en Buenos Aires. Especialistas en fachadas, filtraciones, impermeabilización y acceso por cuerdas.">
-<meta name="keywords" content="trabajos en altura, rope access, acceso por cuerdas, silleteros, silleta, silletero, fachadas, filtraciones, impermeabilización, restauración patrimonial, Buenos Aires, CABA, GBA">
+<meta name="keywords" content="trabajos en altura, rope access, acceso por cuerdas, fachadas, filtraciones, impermeabilización, restauración patrimonial, Buenos Aires, CABA, GBA">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="images/favicon.png">
 <script type="application/ld+json">
@@ -499,6 +499,12 @@ footer {
   z-index: 200;
   display: flex; flex-direction: column; align-items: flex-end;
   gap: 12px;
+  transition: opacity .25s, transform .25s;
+}
+.wa-float.hidden {
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
 }
 .wa-float-btn {
   width: 58px; height: 58px;
@@ -577,7 +583,7 @@ footer {
 </nav>
 
 <!-- ══ HERO ══ -->
-<section class="hero">
+<section class="hero" id="hero">
   <div class="hero-inner">
     <div class="hero-badge">
       <img src="images/logo-vertical.png" alt="Limones Rope Access" class="hero-badge-img">
@@ -589,7 +595,7 @@ footer {
     <h1 class="hero-title">
       Resolución<br>
       técnica de <span class="green">problemas</span><br>
-      <span class="gray"> en altura</span>
+      <span class="gray">complejos en altura</span>
     </h1>
     <div class="hero-bottom">
       <p class="hero-desc">
@@ -921,7 +927,7 @@ footer {
 </footer>
 
 <!-- ══ WHATSAPP FLOTANTE ══ -->
-<div class="wa-float">
+<div class="wa-float" id="wa-float">
   <div class="wa-menu" id="wa-menu">
     <div class="wa-menu-title">¿En qué te ayudamos?</div>
     <a href="https://wa.me/5491171349126?text=Hola%2C%20nos%20intimaron%20por%20el%20estado%20de%20la%20fachada%20y%20necesito%20asesoramiento" target="_blank" class="wa-menu-item">¿Te intimaron por el mal estado de la fachada?</a>
@@ -947,6 +953,36 @@ footer {
       waMenu.classList.remove('open');
     }
   });
+
+  // Oculta el botón flotante cuando el hero o la sección de Contacto
+  // están visibles, para que no tape los botones de WhatsApp de esas secciones.
+  const waFloat = document.getElementById('wa-float');
+  const heroSec = document.getElementById('hero');
+  const contactoSec = document.getElementById('contacto');
+  if (waFloat && (heroSec || contactoSec)) {
+    let heroVisible = false;
+    let contactoVisible = false;
+
+    const updateFloat = () => {
+      if (heroVisible || contactoVisible) {
+        waFloat.classList.add('hidden');
+        waMenu.classList.remove('open');
+      } else {
+        waFloat.classList.remove('hidden');
+      }
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.target === heroSec) heroVisible = entry.isIntersecting;
+        if (entry.target === contactoSec) contactoVisible = entry.isIntersecting;
+      });
+      updateFloat();
+    }, { threshold: 0.15 });
+
+    if (heroSec) observer.observe(heroSec);
+    if (contactoSec) observer.observe(contactoSec);
+  }
 </script>
 
 <script>
