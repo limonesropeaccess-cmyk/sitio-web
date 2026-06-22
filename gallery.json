@@ -1,5 +1,23 @@
 [
   {
+    "image": "images/galeria/Desinstalacion-equipos-climatizacio.jpg",
+    "title": "Desinstalacion equipos climatizacio",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/Desinstalacion-equipos-climatizacio2.jpg",
+    "title": "Desinstalacion equipos climatizacio2",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/IMG-20260131-WA0010.jpg",
+    "title": "IMG 20260131 WA0010",
+    "description": "",
+    "size": "portrait"
+  },
+  {
     "image": "images/galeria/albañileria-belgrano-pozo-aire-luz .jpeg",
     "title": "Albañileria belgrano pozo aire luz ",
     "description": "",
@@ -21,6 +39,48 @@
     "image": "images/galeria/fachada-pintura.jpg",
     "title": "Pintura de fachada",
     "description": "Trabajo en fachada de edificio residencial · CABA",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/hisrolavado-medianera-villa-urquiza.jpeg",
+    "title": "Hisrolavado medianera villa urquiza",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/impermeabilizacion-de-medianeras-monte-castro.jpeg",
+    "title": "Impermeabilizacion de medianeras monte castro",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/impermeabilizacion-de-medianeras-monte-castro2.jpeg",
+    "title": "Impermeabilizacion de medianeras monte castro2",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/impermeabilizacion-de-medianeras-monte-castro3.jpg",
+    "title": "Impermeabilizacion de medianeras monte castro3",
+    "description": "",
+    "size": "landscape"
+  },
+  {
+    "image": "images/galeria/impermeabilizacion-de-medianeras-villa-urquiza.jpg",
+    "title": "Impermeabilizacion de medianeras villa urquiza",
+    "description": "",
+    "size": "landscape"
+  },
+  {
+    "image": "images/galeria/impermeablizacion-terraza-caboto.jpeg",
+    "title": "Impermeablizacion terraza caboto",
+    "description": "",
+    "size": "landscape"
+  },
+  {
+    "image": "images/galeria/instalacion-equipos.climatizacion.jpg",
+    "title": "Instalacion equipos.climatizacion",
+    "description": "",
     "size": "portrait"
   },
   {
