@@ -970,6 +970,19 @@ footer {
     }
   });
 
+  // Conversión de Google Ads: se dispara al clickear cualquier link de WhatsApp de la página
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(link => {
+    link.addEventListener('click', () => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18343119177/MsyzCIrDu9UcEMmS16pE',
+          'value': 1.0,
+          'currency': 'ARS'
+        });
+      }
+    });
+  });
+
   // Oculta el botón flotante cuando el hero o la sección de Contacto
   // están visibles, para que no tape los botones de WhatsApp de esas secciones.
   const waFloat = document.getElementById('wa-float');
