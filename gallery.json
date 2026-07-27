@@ -1,35 +1,5 @@
 [
   {
-    "image": "images/galeria/Bancamiga-Caracas-desinstalación-de-aviso 1.jpg",
-    "title": "Bancamiga Caracas desinstalación de aviso 1",
-    "description": "",
-    "size": "portrait"
-  },
-  {
-    "image": "images/galeria/Bancamiga-Caracas-desinstalación-de-aviso.jpg",
-    "title": "Bancamiga Caracas desinstalación de aviso",
-    "description": "",
-    "size": "portrait"
-  },
-  {
-    "image": "images/galeria/Desinstalacion-equipos-climatización2.jpg",
-    "title": "Desinstalacion equipos climatización2",
-    "description": "",
-    "size": "portrait"
-  },
-  {
-    "image": "images/galeria/Desinstalación-equipo-de-aire- acondicionado.jpg",
-    "title": "Desinstalación equipo de aire  acondicionado",
-    "description": "",
-    "size": "portrait"
-  },
-  {
-    "image": "images/galeria/Desinstalación-equipos-climatización.jpg",
-    "title": "Desinstalación equipos climatización",
-    "description": "",
-    "size": "portrait"
-  },
-  {
     "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria01.jpg",
     "title": "Restauración de la cúpula de La Inmobiliaria",
     "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
@@ -79,20 +49,50 @@
     "link": ""
   },
   {
+    "image": "images/galeria/Bancamiga-Caracas-desinstalación-de-aviso 1.jpg",
+    "title": "Bancamiga Caracas, desinstalación de aviso corporativo",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/Bancamiga-Caracas-desinstalación-de-aviso.jpg",
+    "title": "Bancamiga Caracas, desinstalación de aviso corporativo",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/Desinstalacion-equipos-climatización2.jpg",
+    "title": "Desinstalación de equipos de climatización",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/Desinstalación-equipo-de-aire- acondicionado.jpg",
+    "title": "Desinstalación de equipo de aire acondicionado",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/Desinstalación-equipos-climatización.jpg",
+    "title": "Desinstalación de equipos de climatización",
+    "description": "",
+    "size": "portrait"
+  },
+  {
     "image": "images/galeria/albañileria-belgrano-pozo-aire-luz .jpeg",
-    "title": "Albañileria belgrano pozo aire luz ",
+    "title": "Albañilería en Belgrano, pozo de aire y luz",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/albañileria-belgrano-pozo-aire-luz-2.jpeg",
-    "title": "Albañileria belgrano pozo aire luz 2",
+    "title": "Albañilería en Belgrano, pozo de aire y luz",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/cambio-de-lona-bingo-averellaneda.png",
-    "title": "Cambio de lona bingo averellaneda",
+    "title": "Cambio de lona, Bingo Avellaneda",
     "description": "",
     "size": "portrait"
   },
@@ -104,116 +104,116 @@
   },
   {
     "image": "images/galeria/hidrolavado-medianera-villa-urquiza.jpeg",
-    "title": "Hidrolavado medianera villa urquiza",
+    "title": "Hidrolavado de medianera, Villa Urquiza",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/impermeabilización-de-medianeras-monte-castro.jpeg",
-    "title": "Impermeabilización de medianeras monte castro",
+    "title": "Impermeabilización de medianeras, Monte Castro",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/impermeabilización-de-medianeras-monte-castro2.jpeg",
-    "title": "Impermeabilización de medianeras monte castro2",
+    "title": "Impermeabilización de medianeras, Monte Castro",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/impermeabilización-de-medianeras-monte-castro3.jpg",
-    "title": "Impermeabilización de medianeras monte castro3",
+    "title": "Impermeabilización de medianeras, Monte Castro",
     "description": "",
     "size": "landscape"
   },
   {
     "image": "images/galeria/impermeabilización-de-medianeras-villa-urquiza.jpg",
-    "title": "Impermeabilización de medianeras villa urquiza",
+    "title": "Impermeabilización de medianeras, Villa Urquiza",
     "description": "",
     "size": "landscape"
   },
   {
     "image": "images/galeria/impermeabilización-terraza-caboto2.jpeg",
-    "title": "Impermeabilización terraza caboto2",
+    "title": "Impermeabilización de terraza, Caboto",
     "description": "",
     "size": "landscape"
   },
   {
     "image": "images/galeria/impermeablización-terraza-caboto.jpeg",
-    "title": "Impermeablización terraza caboto",
+    "title": "Impermeabilización de terraza, Caboto",
     "description": "",
     "size": "landscape"
   },
   {
     "image": "images/galeria/instalación-ductos-de-extracción (2).jpeg",
-    "title": "Instalación ductos de extracción (2)",
+    "title": "Instalación de ductos de extracción",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/instalación-ductos-de-extracción.jpeg",
-    "title": "Instalación ductos de extracción",
+    "title": "Instalación de ductos de extracción",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/instalación-equipos-climatización.jpg",
-    "title": "Instalación equipos climatización",
+    "title": "Instalación de equipos de climatización",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/instalación-gigantografia-en-medianera-san-isidro (2).jpeg",
-    "title": "Instalación gigantografia en medianera san isidro (2)",
+    "title": "Instalación de gigantografía en medianera, San Isidro",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/instalación-gigantografia-en-medianera-san-isidro (3).jpeg",
-    "title": "Instalación gigantografia en medianera san isidro (3)",
+    "title": "Instalación de gigantografía en medianera, San Isidro",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/instalación-gigantografia-en-medianera-san-isidro.jpeg",
-    "title": "Instalación gigantografia en medianera san isidro",
+    "title": "Instalación de gigantografía en medianera, San Isidro",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/pintura-de-contrafrente-Lascano .png",
-    "title": "Pintura de contrafrente Lascano ",
+    "title": "Pintura de contrafrente, Lascano",
     "description": "",
     "size": "landscape"
   },
   {
     "image": "images/galeria/pintura-de-medianera-cervantes-2.jpeg",
-    "title": "Pintura de medianera cervantes 2",
+    "title": "Pintura de medianera, Cervantes",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/pintura-de-medianera-cervantes-3.jpeg",
-    "title": "Pintura de medianera cervantes 3",
+    "title": "Pintura de medianera, Cervantes",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/pintura-de-pozo-Lascano .jpeg",
-    "title": "Pintura de pozo Lascano ",
+    "title": "Pintura de pozo, Lascano",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/pintura-de-pozo-cervantes-2.jpeg",
-    "title": "Pintura de pozo cervantes 2",
+    "title": "Pintura de pozo, Cervantes",
     "description": "",
     "size": "portrait"
   },
   {
     "image": "images/galeria/preparación-equipo.jpg",
-    "title": "Preparación equipo",
-    "description": "",
+    "title": "Preparación de equipo",
+    "description": "Briefing de seguridad en azotea previo a descenso",
     "size": "landscape"
   },
   {
