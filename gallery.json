@@ -1,73 +1,80 @@
 [
   {
-    "image": "images/galeria/Bancamiga-Caracas-desinstalación-de-aviso 1.jpg",
-    "title": "Bancamiga Caracas desinstalación de aviso 1",
-    "description": "",
-    "size": "portrait"
-  },
-  {
-    "image": "images/galeria/Bancamiga-Caracas-desinstalación-de-aviso.jpg",
-    "title": "Bancamiga Caracas desinstalación de aviso",
-    "description": "",
-    "size": "portrait"
-  },
-  {
-    "image": "images/galeria/Desinstalacion-equipos-climatización2.jpg",
-    "title": "Desinstalacion equipos climatización2",
-    "description": "",
-    "size": "portrait"
-  },
-  {
-    "image": "images/galeria/Desinstalación-equipo-de-aire- acondicionado.jpg",
-    "title": "Desinstalación equipo de aire  acondicionado",
-    "description": "",
-    "size": "portrait"
-  },
-  {
-    "image": "images/galeria/Desinstalación-equipos-climatización.jpg",
-    "title": "Desinstalación equipos climatización",
-    "description": "",
-    "size": "portrait"
-  },
-  {
     "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria01.jpg",
-    "title": "Restauracion cupula oetste edf la inmobiliaria01",
-    "description": "",
-    "size": "portrait"
+    "title": "Restauración de la cúpula de La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "size": "portrait",
+    "link": ""
   },
   {
     "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria02.jpg",
-    "title": "Restauracion cupula oetste edf la inmobiliaria02",
-    "description": "",
-    "size": "portrait"
+    "title": "Restauración de la cúpula de La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "size": "portrait",
+    "link": ""
   },
   {
     "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria03.jpg",
-    "title": "Restauracion cupula oetste edf la inmobiliaria03",
-    "description": "",
-    "size": "portrait"
+    "title": "Restauración de la cúpula de La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "size": "portrait",
+    "link": ""
   },
   {
     "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria04.jpg",
-    "title": "Restauracion cupula oetste edf la inmobiliaria04",
-    "description": "",
-    "size": "portrait"
+    "title": "Restauración de la cúpula de La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "size": "portrait",
+    "link": ""
   },
   {
     "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria05.jpg",
-    "title": "Restauracion cupula oetste edf la inmobiliaria05",
-    "description": "",
-    "size": "portrait"
+    "title": "Restauración de la cúpula de La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "size": "portrait",
+    "link": "https://www.clarin.com/ciudades/cupula-hace-30-anos-partio-rayo-color-faro-avenida-mayo_0_uQVPFZTJS3.html"
   },
   {
     "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria06.jpg",
-    "title": "Restauracion cupula oetste edf la inmobiliaria06",
+    "title": "Restauración de la cúpula de La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "size": "portrait",
+    "link": ""
+  },
+  {
+    "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria07.jpg",
+    "title": "Restauración de la cúpula de La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "size": "portrait",
+    "link": ""
+  },
+  {
+    "image": "images/galeria/Bancamiga Caracas, desinstalacion de aviso cop.jpg",
+    "title": "Bancamiga Caracas, desinstalacion de aviso cop",
     "description": "",
     "size": "portrait"
   },
   {
-    "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria07.jpg",
-    "title": "Restauracion cupula oetste edf la inmobiliaria07",
+    "image": "images/galeria/Bancamiga Caracas, desinstalacion de aviso corp 1.jpg",
+    "title": "Bancamiga Caracas, desinstalacion de aviso corp 1",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/Desinstalacion-equipos-climatizacio.jpg",
+    "title": "Desinstalacion equipos climatizacio",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/Desinstalacion-equipos-climatizacio2.jpg",
+    "title": "Desinstalacion equipos climatizacio2",
+    "description": "",
+    "size": "portrait"
+  },
+  {
+    "image": "images/galeria/IMG-20260131-WA0010.jpg",
+    "title": "IMG 20260131 WA0010",
     "description": "",
     "size": "portrait"
   },
@@ -138,38 +145,38 @@
     "size": "landscape"
   },
   {
-    "image": "images/galeria/instalacion-equipos-climatización.jpg",
-    "title": "Instalacion equipos climatización",
+    "image": "images/galeria/instalacio ductos de extraccion (2).jpeg",
+    "title": "Instalacio ductos de extraccion (2)",
     "description": "",
     "size": "portrait"
   },
   {
-    "image": "images/galeria/instalación-ductos-de-extracción (2).jpeg",
-    "title": "Instalación ductos de extracción (2)",
+    "image": "images/galeria/instalacio ductos de extraccion.jpeg",
+    "title": "Instalacio ductos de extraccion",
     "description": "",
     "size": "portrait"
   },
   {
-    "image": "images/galeria/instalación-ductos-de-extracción.jpeg",
-    "title": "Instalación ductos de extracción",
+    "image": "images/galeria/instalacio gigantografia enmedianera san isidro (2).jpeg",
+    "title": "Instalacio gigantografia enmedianera san isidro (2)",
     "description": "",
     "size": "portrait"
   },
   {
-    "image": "images/galeria/instalación-gigantografia-en-medianera-san-isidro (2).jpeg",
-    "title": "Instalación gigantografia en medianera san isidro (2)",
+    "image": "images/galeria/instalacio gigantografia enmedianera san isidro (3).jpeg",
+    "title": "Instalacio gigantografia enmedianera san isidro (3)",
     "description": "",
     "size": "portrait"
   },
   {
-    "image": "images/galeria/instalación-gigantografia-en-medianera-san-isidro (3).jpeg",
-    "title": "Instalación gigantografia en medianera san isidro (3)",
+    "image": "images/galeria/instalacio gigantografia enmedianera san isidro.jpeg",
+    "title": "Instalacio gigantografia enmedianera san isidro",
     "description": "",
     "size": "portrait"
   },
   {
-    "image": "images/galeria/instalación-gigantografia-en-medianera-san-isidro.jpeg",
-    "title": "Instalación gigantografia en medianera san isidro",
+    "image": "images/galeria/instalacion-equipos.climatizacion.jpg",
+    "title": "Instalacion equipos.climatizacion",
     "description": "",
     "size": "portrait"
   },
@@ -204,9 +211,9 @@
     "size": "portrait"
   },
   {
-    "image": "images/galeria/preparación-equipo.jpg",
-    "title": "Preparación equipo",
-    "description": "",
+    "image": "images/galeria/preparacion-equipo.jpg",
+    "title": "Preparación de equipo",
+    "description": "Briefing de seguridad en azotea previo a descenso",
     "size": "landscape"
   },
   {
