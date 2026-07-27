@@ -47,7 +47,9 @@
   ],
   "description": "Empresa de trabajos en altura en Buenos Aires. Especialistas en fachadas, filtraciones, impermeabilización, instalaciones especiales y restauración patrimonial mediante acceso por cuerdas.",
   "sameAs": [
-    "https://wa.me/5491171349126"
+    "https://wa.me/5491171349126",
+    "https://www.linkedin.com/in/limonesropeaccess-undefined-6a746a424/",
+    "https://www.instagram.com/limonesropeaccess/"
   ],
   "makesOffer": [
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trabajos en fachadas" } },
@@ -59,7 +61,49 @@
   ]
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es el acceso por cuerdas (rope access)?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Es una técnica de trabajo en altura que permite intervenir fachadas, techos y estructuras complejas usando cuerdas certificadas, en lugar de andamios o grúas. Permite llegar a lugares de difícil acceso de forma segura, rápida y con menor costo operativo." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué zonas de Buenos Aires trabajan?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Trabajamos en toda la Ciudad Autónoma de Buenos Aires y el Gran Buenos Aires, y realizamos trabajos puntuales en el resto del país según el proyecto." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué tipo de trabajos realizan?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Filtraciones y humedad, impermeabilización de terrazas y medianeras, pintura y reparación de fachadas, instalaciones especiales en altura (carteles, gas, cañerías exteriores) y restauración patrimonial de edificios históricos." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es necesario instalar andamios?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Trabajamos con técnicas de acceso por cuerdas, lo que evita el armado de andamios: reduce tiempos, costos y el impacto en la fachada o la vía pública." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El personal está capacitado y asegurado?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, nuestro equipo cuenta con formación específica en trabajos verticales y protocolos de seguridad certificados para cada intervención." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se cotiza un trabajo?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Coordinamos una visita técnica o evaluamos fotos según el caso, y armamos un presupuesto según la complejidad, la altura y los materiales necesarios. Se puede iniciar el proceso escribiendo por WhatsApp." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajan en edificios patrimoniales o de valor histórico?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, la empresa tiene experiencia en restauración de estructuras patrimoniales, como la restauración de la cúpula del edificio La Inmobiliaria, un trabajo destacado por el diario Clarín." }
+    }
+  ]
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -391,6 +435,19 @@ footer {
 .gal-desc  { font-size: 12px; color: var(--gray2); line-height: 1.5; }
 .gal-link  { display: inline-block; margin-top: 6px; font-size: 12px; font-weight: 600; color: var(--green); text-decoration: none; }
 .gal-link:hover { text-decoration: underline; }
+
+/* FAQ */
+.faq-list { max-width: 760px; margin-top: 20px; }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary {
+  list-style: none; cursor: pointer; padding: 22px 0;
+  display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  font-family: 'Bebas Neue', sans-serif; font-size: 19px; letter-spacing: .3px; color: var(--white);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary .faq-plus { flex-shrink: 0; color: var(--green); font-size: 22px; font-weight: 300; transition: transform .25s ease; }
+.faq-item[open] summary .faq-plus { transform: rotate(45deg); }
+.faq-item .faq-answer { padding: 0 0 24px; color: var(--gray2); font-size: 15px; font-weight: 300; line-height: 1.75; max-width: 640px; }
 .gal-item.gal-portrait { min-height: 500px; }
 .gal-item.gal-landscape { min-height: 240px; }
 
@@ -614,7 +671,7 @@ footer {
     </h1>
     <div class="hero-bottom">
       <p class="hero-desc">
-        Soluciones especializadas para filtraciones, fachadas, impermeabilización, instalaciones y restauración mediante técnicas de acceso por cuerdas. Intervenciones seguras, rápidas y rentables sin andamios.
+        Trabajos en altura en Buenos Aires, sin andamios: resolvemos filtraciones, fachadas, impermeabilización, instalaciones y restauración con acceso por cuerdas. Intervenciones seguras, rápidas y más rentables que los métodos tradicionales.
       </p>
       <div class="hero-right-col">
         <div class="hero-stats">
@@ -906,6 +963,48 @@ footer {
     <h2 class="sec-title">El equipo en<br>acción</h2>
     <p style="color:var(--gray2);font-size:15px;font-weight:300;line-height:1.7;margin-top:14px;max-width:520px;">Cada imagen es un trabajo real. Sin andamios, sin grúas — solo técnica, equipo y altura.</p>
     <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<div class="sep"></div>
+<section class="sec" id="faq">
+  <div class="sec-inner">
+    <div class="sec-label">
+      <div class="sec-label-line"></div>
+      Preguntas frecuentes
+    </div>
+    <h2 class="sec-title">Lo que más<br>nos preguntan</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿Qué es el acceso por cuerdas (rope access)?<span class="faq-plus">+</span></summary>
+        <div class="faq-answer">Es una técnica de trabajo en altura que permite intervenir fachadas, techos y estructuras complejas usando cuerdas certificadas, en lugar de andamios o grúas. Permite llegar a lugares de difícil acceso de forma segura, rápida y con menor costo operativo.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿En qué zonas de Buenos Aires trabajan?<span class="faq-plus">+</span></summary>
+        <div class="faq-answer">Trabajamos en toda la Ciudad Autónoma de Buenos Aires y el Gran Buenos Aires, y realizamos trabajos puntuales en el resto del país según el proyecto.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué tipo de trabajos realizan?<span class="faq-plus">+</span></summary>
+        <div class="faq-answer">Filtraciones y humedad, impermeabilización de terrazas y medianeras, pintura y reparación de fachadas, instalaciones especiales en altura (carteles, gas, cañerías exteriores) y restauración patrimonial de edificios históricos.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Es necesario instalar andamios?<span class="faq-plus">+</span></summary>
+        <div class="faq-answer">No. Trabajamos con técnicas de acceso por cuerdas, lo que evita el armado de andamios: reduce tiempos, costos y el impacto en la fachada o la vía pública.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿El personal está capacitado y asegurado?<span class="faq-plus">+</span></summary>
+        <div class="faq-answer">Sí, nuestro equipo cuenta con formación específica en trabajos verticales y protocolos de seguridad certificados para cada intervención.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cómo se cotiza un trabajo?<span class="faq-plus">+</span></summary>
+        <div class="faq-answer">Coordinamos una visita técnica o evaluamos fotos según el caso, y armamos un presupuesto según la complejidad, la altura y los materiales necesarios. Podés escribirnos por WhatsApp para arrancar.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Trabajan en edificios patrimoniales o de valor histórico?<span class="faq-plus">+</span></summary>
+        <div class="faq-answer">Sí, tenemos experiencia en restauración de estructuras patrimoniales — como la restauración de la cúpula del edificio La Inmobiliaria, un trabajo destacado por Clarín.</div>
+      </details>
+    </div>
   </div>
 </section>
 
