@@ -112,7 +112,7 @@
   --bg:      #0e0f0e;
   --green:   #c8f000;
   --white:   #f0f0ec;
-  --gray:    #6b7060;
+  --gray:    #828879;
   --gray2:   #9a9f8e;
   --line:    rgba(255,255,255,0.08);
 }
@@ -588,7 +588,8 @@ footer {
 }
 .reviews-arrow:hover { border-color: var(--green); color: var(--green); }
 .reviews-dots { display: flex; gap: 6px; }
-.reviews-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--line); border: none; cursor: pointer; padding: 0; }
+.reviews-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--line); border: none; cursor: pointer; padding: 0; position: relative; }
+.reviews-dot::before { content: ''; position: absolute; top: 50%; left: 50%; width: 24px; height: 24px; transform: translate(-50%, -50%); }
 .reviews-dot.active { background: var(--green); width: 18px; border-radius: 3px; transition: width .2s; }
 @media (max-width: 600px) {
   .review-card { padding: 1.5rem; }
@@ -684,6 +685,8 @@ footer {
   </div>
 </nav>
 
+<main>
+
 <!-- ══ HERO ══ -->
 <section class="hero" id="hero">
   <div class="hero-inner">
@@ -731,7 +734,14 @@ footer {
     </div>
   </div>
   <div class="hero-photo">
-    <img src="images/hero-photo.jpg" alt="Técnico de Limones Rope Access realizando descenso con cuerdas en fachada de edificio en altura" width="1456" height="2592" fetchpriority="high">
+    <img data-src="images/hero-photo.jpg" alt="Técnico de Limones Rope Access realizando descenso con cuerdas en fachada de edificio en altura" width="1456" height="2592" id="hero-img">
+    <script>
+      if (window.innerWidth > 768) {
+        var heroImg = document.getElementById('hero-img');
+        heroImg.setAttribute('fetchpriority', 'high');
+        heroImg.src = heroImg.getAttribute('data-src');
+      }
+    </script>
   </div>
 </section>
 
@@ -1045,6 +1055,8 @@ footer {
     <div class="cta-info">+54 9 11 7134 9126 · Ciudad Autónoma de Buenos Aires</div>
   </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
