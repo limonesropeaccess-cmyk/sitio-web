@@ -69,7 +69,7 @@
     {
       "@type": "Question",
       "name": "¿Qué es el acceso por cuerdas (rope access)?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Es una técnica de trabajo en altura que permite intervenir fachadas, techos y estructuras complejas usando cuerdas certificadas, en lugar de andamios o grúas. Permite llegar a lugares de difícil acceso de forma segura, rápida y con menor costo operativo." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Es una técnica de trabajo en altura que permite intervenir fachadas, techos y estructuras complejas usando cuerdas certificadas. No es que el andamio no pueda llegar, sino que el acceso por cuerdas suele ser más rápido y económico de montar, con menor impacto en la fachada o la vía pública." }
     },
     {
       "@type": "Question",
@@ -84,7 +84,7 @@
     {
       "@type": "Question",
       "name": "¿Es necesario instalar andamios?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No. Trabajamos con técnicas de acceso por cuerdas, lo que evita el armado de andamios: reduce tiempos, costos y el impacto en la fachada o la vía pública." }
+      "acceptedAnswer": { "@type": "Answer", "text": "No siempre. Los andamios pueden llegar a casi cualquier lugar, pero suelen ser más lentos y costosos de montar. El acceso por cuerdas evita ese armado en la mayoría de los casos, y según la complejidad del trabajo, a veces combinamos ambas técnicas para garantizar la mayor seguridad." }
     },
     {
       "@type": "Question",
@@ -448,6 +448,13 @@ footer {
 .gal-link  { display: inline-block; margin-top: 6px; font-size: 12px; font-weight: 600; color: var(--green); text-decoration: none; }
 .gal-link:hover { text-decoration: underline; }
 
+/* En celulares/tablets no hay hover real: mostramos la info siempre visible
+   para que tocar el link sea siempre intencional, no un efecto lateral del hover simulado */
+@media (hover: none) {
+  .gal-overlay { opacity: 1; }
+  .gal-item img { filter: grayscale(0%) brightness(1); }
+}
+
 /* FAQ */
 .faq-list { max-width: 760px; margin-top: 20px; }
 .faq-item { border-bottom: 1px solid var(--line); }
@@ -551,29 +558,40 @@ footer {
   .proceso-list { grid-template-columns: 1fr; }
 }
 
-/* ── TESTIMONIOS ── */
-.testimonios-list {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-.testimonio-card {
+/* ── RESEÑAS (carrusel de Google) ── */
+.reviews-carousel { margin-top: 3rem; position: relative; max-width: 720px; }
+.reviews-track { overflow: hidden; }
+.reviews-slides { display: flex; transition: transform .5s ease; }
+.review-slide { flex: 0 0 100%; box-sizing: border-box; padding: 0 4px; }
+.review-card {
   border: 1px solid var(--line);
   border-radius: 10px;
-  padding: 1.8rem;
+  padding: 2rem;
   background: rgba(255,255,255,0.02);
+  min-height: 180px;
 }
-.testimonio-quote {
+.review-stars { color: var(--green); font-size: 14px; letter-spacing: 2px; margin-bottom: 1rem; }
+.review-quote {
   font-size: 14px; color: var(--white); line-height: 1.7;
   font-weight: 300; margin-bottom: 1.2rem;
 }
-.testimonio-quote::before { content: "“"; color: var(--green); }
-.testimonio-quote::after { content: "”"; color: var(--green); }
-.testimonio-author { font-size: 13px; font-weight: 600; color: var(--white); }
-.testimonio-role { font-size: 12px; color: var(--gray); margin-top: 2px; }
-@media (max-width: 900px) {
-  .testimonios-list { grid-template-columns: 1fr; }
+.review-quote::before { content: "“"; color: var(--green); }
+.review-quote::after { content: "”"; color: var(--green); }
+.review-author { font-size: 13px; font-weight: 600; color: var(--white); }
+.review-source { font-size: 11px; color: var(--gray); margin-top: 2px; }
+.reviews-nav { display: flex; align-items: center; gap: 1.2rem; margin-top: 1.5rem; }
+.reviews-arrow {
+  width: 34px; height: 34px; border-radius: 50%;
+  border: 1px solid var(--line); background: transparent; color: var(--white);
+  cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center;
+  transition: border-color .2s;
+}
+.reviews-arrow:hover { border-color: var(--green); color: var(--green); }
+.reviews-dots { display: flex; gap: 6px; }
+.reviews-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--line); border: none; cursor: pointer; padding: 0; }
+.reviews-dot.active { background: var(--green); width: 18px; border-radius: 3px; transition: width .2s; }
+@media (max-width: 600px) {
+  .review-card { padding: 1.5rem; }
 }
 
 /* ── WHATSAPP FLOTANTE ── */
@@ -683,7 +701,7 @@ footer {
     </h1>
     <div class="hero-bottom">
       <p class="hero-desc">
-        Trabajos en altura en Buenos Aires, sin andamios: resolvemos filtraciones, fachadas, impermeabilización, instalaciones y restauración con acceso por cuerdas. Intervenciones seguras, rápidas y más rentables que los métodos tradicionales.
+        Trabajos en altura en Buenos Aires: resolvemos filtraciones, fachadas, impermeabilización, instalaciones y restauración con acceso por cuerdas, reduciendo al mínimo el uso de andamios. Intervenciones seguras, rápidas y más rentables que los métodos tradicionales.
       </p>
       <div class="hero-right-col">
         <div class="hero-stats">
@@ -730,7 +748,7 @@ footer {
       <div class="servicio-row">
         <div class="serv-num-big">01</div>
         <div class="serv-name-big">Trabajos en fachadas</div>
-        <div class="serv-desc-inline">Pintura, reparación, sellado y restauración de fachadas sin andamios.</div>
+        <div class="serv-desc-inline">Pintura, reparación, sellado y restauración de fachadas, reduciendo el uso de andamios cuando el trabajo lo permite.</div>
         <div class="serv-tags-inline">
           <span class="stag">Pintura</span>
           <span class="stag">Sellado</span>
@@ -807,7 +825,7 @@ footer {
       <div class="problema-item"><span class="problema-icon">●</span> Riesgo de caída de material</div>
       <div class="problema-item"><span class="problema-icon">●</span> Caños deteriorados</div>
       <div class="problema-item"><span class="problema-icon">●</span> Fachadas envejecidas</div>
-      <div class="problema-item"><span class="problema-icon">●</span> Sectores inaccesibles sin andamios</div>
+      <div class="problema-item"><span class="problema-icon">●</span> Zonas donde el andamio resulta lento o costoso</div>
     </div>
   </div>
 </section>
@@ -868,29 +886,17 @@ footer {
   <div class="sec-inner">
     <div class="sec-label">
       <div class="sec-label-line"></div>
-      Opiniones
+      Opiniones en Google
     </div>
     <h2 class="sec-title">Lo que dicen<br>nuestros clientes</h2>
-    <div class="testimonios-list">
-      <div class="testimonio-card">
-        <div class="testimonio-quote">Confío en ustedes, hagan lo que tengan que hacer para que quede bien.</div>
-        <div class="testimonio-author">Julieta</div>
-        <div class="testimonio-role">Administradora de consorcios</div>
+    <div class="reviews-carousel" id="reviews-carousel">
+      <div class="reviews-track">
+        <div class="reviews-slides" id="reviews-slides"></div>
       </div>
-      <div class="testimonio-card">
-        <div class="testimonio-quote">Nunca había tenido proveedores que me tuvieran al tanto. Es perfecto que pasen fotos, videos y actualizaciones diarias de los trabajos.</div>
-        <div class="testimonio-author">Ale</div>
-        <div class="testimonio-role">Miembro del consejo de propietarios</div>
-      </div>
-      <div class="testimonio-card">
-        <div class="testimonio-quote">Ustedes son los que saben, son quienes me van a solucionar este problema.</div>
-        <div class="testimonio-author">Adrián</div>
-        <div class="testimonio-role">Cliente particular</div>
-      </div>
-      <div class="testimonio-card">
-        <div class="testimonio-quote">No cambio plata por seguridad, así que pago por sus servicios, pero estoy tranquilo.</div>
-        <div class="testimonio-author">Jorge</div>
-        <div class="testimonio-role">Cliente particular</div>
+      <div class="reviews-nav">
+        <button class="reviews-arrow" id="reviews-prev" aria-label="Reseña anterior">←</button>
+        <div class="reviews-dots" id="reviews-dots"></div>
+        <button class="reviews-arrow" id="reviews-next" aria-label="Siguiente reseña">→</button>
       </div>
     </div>
   </div>
@@ -976,7 +982,7 @@ footer {
       Trabajos realizados
     </div>
     <h2 class="sec-title">El equipo en<br>acción</h2>
-    <p style="color:var(--gray2);font-size:15px;font-weight:300;line-height:1.7;margin-top:14px;max-width:520px;">Cada imagen es un trabajo real. Sin andamios, sin grúas — solo técnica, equipo y altura.</p>
+    <p style="color:var(--gray2);font-size:15px;font-weight:300;line-height:1.7;margin-top:14px;max-width:520px;">Cada imagen es un trabajo real. La mayoría, sin andamios ni grúas — cuando el costo, el tiempo o la complejidad lo justifican, combinamos técnicas.</p>
     <div class="gallery" id="gallery"></div>
   </div>
 </section>
@@ -993,7 +999,7 @@ footer {
     <div class="faq-list">
       <details class="faq-item">
         <summary>¿Qué es el acceso por cuerdas (rope access)?<span class="faq-plus">+</span></summary>
-        <div class="faq-answer">Es una técnica de trabajo en altura que permite intervenir fachadas, techos y estructuras complejas usando cuerdas certificadas, en lugar de andamios o grúas. Permite llegar a lugares de difícil acceso de forma segura, rápida y con menor costo operativo.</div>
+        <div class="faq-answer">Es una técnica de trabajo en altura que permite intervenir fachadas, techos y estructuras complejas usando cuerdas certificadas. No es que el andamio no pueda llegar, sino que el acceso por cuerdas suele ser más rápido y económico de montar, con menor impacto en la fachada o la vía pública.</div>
       </details>
       <details class="faq-item">
         <summary>¿En qué zonas de Buenos Aires trabajan?<span class="faq-plus">+</span></summary>
@@ -1005,7 +1011,7 @@ footer {
       </details>
       <details class="faq-item">
         <summary>¿Es necesario instalar andamios?<span class="faq-plus">+</span></summary>
-        <div class="faq-answer">No. Trabajamos con técnicas de acceso por cuerdas, lo que evita el armado de andamios: reduce tiempos, costos y el impacto en la fachada o la vía pública.</div>
+        <div class="faq-answer">No siempre. Los andamios pueden llegar a casi cualquier lugar, pero suelen ser más lentos y costosos de montar. El acceso por cuerdas evita ese armado en la mayoría de los casos, y según la complejidad del trabajo, a veces combinamos ambas técnicas para garantizar la mayor seguridad.</div>
       </details>
       <details class="faq-item">
         <summary>¿El personal está capacitado y asegurado?<span class="faq-plus">+</span></summary>
@@ -1149,6 +1155,53 @@ footer {
       `).join('');
     })
     .catch(err => console.error('No se pudo cargar gallery.json:', err));
+</script>
+
+<script>
+  // Carrusel de reseñas de Google, cargado desde reviews.json
+  // Para sumar una reseña nueva: agregá un objeto {author, rating, text} a ese archivo, no toques este HTML.
+  fetch('reviews.json')
+    .then(res => res.json())
+    .then(reviews => {
+      const slidesEl = document.getElementById('reviews-slides');
+      const dotsEl = document.getElementById('reviews-dots');
+      if (!slidesEl || !reviews.length) return;
+
+      slidesEl.innerHTML = reviews.map(r => `
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-stars">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
+            <div class="review-quote">${r.text}</div>
+            <div class="review-author">${r.author}</div>
+            <div class="review-source">Reseña de Google</div>
+          </div>
+        </div>
+      `).join('');
+
+      dotsEl.innerHTML = reviews.map((_, i) => `<button class="reviews-dot${i === 0 ? ' active' : ''}" data-i="${i}" aria-label="Ir a reseña ${i + 1}"></button>`).join('');
+
+      let current = 0;
+      const dots = dotsEl.querySelectorAll('.reviews-dot');
+
+      function goTo(i) {
+        current = (i + reviews.length) % reviews.length;
+        slidesEl.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d, di) => d.classList.toggle('active', di === current));
+      }
+
+      document.getElementById('reviews-prev').addEventListener('click', () => { goTo(current - 1); resetTimer(); });
+      document.getElementById('reviews-next').addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+      dots.forEach(d => d.addEventListener('click', () => { goTo(parseInt(d.dataset.i)); resetTimer(); }));
+
+      let timer = setInterval(() => goTo(current + 1), 6000);
+      function resetTimer() { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 6000); }
+
+      // Pausa el avance automático mientras el mouse está sobre el carrusel
+      const carousel = document.getElementById('reviews-carousel');
+      carousel.addEventListener('mouseenter', () => clearInterval(timer));
+      carousel.addEventListener('mouseleave', resetTimer);
+    })
+    .catch(err => console.error('No se pudo cargar reviews.json:', err));
 </script>
 
 </body>
