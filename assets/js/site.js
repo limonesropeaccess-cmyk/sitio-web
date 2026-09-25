@@ -57,12 +57,39 @@
       var val = decodeURIComponent(m[1]);
       for (var i = 0; i < sel.options.length; i++) if (sel.options[i].value === val) sel.selectedIndex = i;
     }
-    // Aviso si la foto supera el límite
+    // Foto: se achica en el celular antes de enviarla (máx. 1600 px, JPEG),
+    // así una foto de 5-8 MB sube como ~300 KB y el envío es mucho más rápido.
     var file = form.querySelector('input[type=file]');
-    if (file) file.addEventListener('change', function () {
+    var hint = document.getElementById('foto-hint');
+    var btn = form.querySelector('button[type=submit]');
+    if (file && window.DataTransfer && window.createImageBitmap) {
+      file.addEventListener('change', function () {
+        var f = file.files[0];
+        if (!f || !/^image\//.test(f.type) || f.size < 600 * 1024) return;
+        if (btn) { btn.disabled = true; btn.textContent = 'Preparando foto…'; }
+        createImageBitmap(f).then(function (img) {
+          var max = 1600, sc = Math.min(1, max / Math.max(img.width, img.height));
+          var c = document.createElement('canvas');
+          c.width = Math.round(img.width * sc); c.height = Math.round(img.height * sc);
+          c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+          c.toBlob(function (blob) {
+            if (blob && blob.size < f.size) {
+              var dt = new DataTransfer();
+              dt.items.add(new File([blob], f.name.replace(/\.[^.]+$/, '') + '.jpg', { type: 'image/jpeg' }));
+              file.files = dt.files;
+            }
+            if (btn) { btn.disabled = false; btn.textContent = 'Enviar consulta'; }
+          }, 'image/jpeg', 0.8);
+        }).catch(function () { if (btn) { btn.disabled = false; btn.textContent = 'Enviar consulta'; } });
+      });
+    }
+    if (file && !(window.DataTransfer && window.createImageBitmap)) file.addEventListener('change', function () {
       var total = 0; for (var j = 0; j < file.files.length; j++) total += file.files[j].size;
-      var hint = document.getElementById('foto-hint');
       if (hint && total > 8 * 1024 * 1024) { hint.textContent = 'La foto supera 8 MB. Probá con una más liviana o mandala por WhatsApp.'; hint.style.color = '#ff8a8a'; file.value = ''; }
+    });
+    // Indicar que se está enviando
+    form.addEventListener('submit', function () {
+      if (btn) { btn.textContent = 'Enviando…'; setTimeout(function () { btn.disabled = true; }, 0); }
     });
   }
 })();
