@@ -1,0 +1,10 @@
+# Redirecciones (Netlify). Formato: origen destino código
+/images/hero-photo.jpg  /images/tecnico-acceso-por-cuerdas-descenso-fachada.jpg  301
+/servicios              /trabajos-en-altura/  301
+/servicios/             /trabajos-en-altura/  301
+/filtraciones           /impermeabilizacion/  301
+/filtraciones/          /impermeabilizacion/  301
+/fachadas               /reparacion-de-fachadas/  301
+/fachadas/              /reparacion-de-fachadas/  301
+/restauracion-de-fachadas   /restauracion-patrimonial/  301
+/restauracion-de-fachadas/  /restauracion-patrimonial/  301

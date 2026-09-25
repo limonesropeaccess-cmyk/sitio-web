@@ -1,0 +1,18 @@
+# Cabeceras HTTP (Netlify)
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/images/*
+  Cache-Control: public, max-age=2592000
+
+/_src/*
+  X-Robots-Tag: noindex, nofollow
+
+/actualizar-galeria.*
+  X-Robots-Tag: noindex, nofollow
+
+/generar-paginas.bat
+  X-Robots-Tag: noindex, nofollow

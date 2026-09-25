@@ -1,225 +1,399 @@
 [
   {
-    "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria01.jpg",
-    "title": "Restauración de la cúpula de La Inmobiliaria",
-    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "image": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-01.jpg",
+    "image_sm": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-01-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Restauración de la cúpula oeste del edificio La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · Av. de Mayo, CABA",
+    "alt": "Cúpula del edificio La Inmobiliaria con andamio tubular durante la restauración, Avenida de Mayo, CABA",
     "size": "portrait",
-    "link": ""
+    "proyecto": "cupula-la-inmobiliaria"
   },
   {
-    "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria02.jpg",
-    "title": "Restauración de la cúpula de La Inmobiliaria",
-    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "image": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-02.jpg",
+    "image_sm": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-02-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Restauración de la cúpula oeste del edificio La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · Av. de Mayo, CABA",
+    "alt": "Cúpula del edificio La Inmobiliaria restaurada, vista desde la terraza, Avenida de Mayo",
     "size": "portrait",
-    "link": ""
+    "proyecto": "cupula-la-inmobiliaria"
   },
   {
-    "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria03.jpg",
-    "title": "Restauración de la cúpula de La Inmobiliaria",
-    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "image": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-03.jpg",
+    "image_sm": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-03-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Restauración de la cúpula oeste del edificio La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · Av. de Mayo, CABA",
+    "alt": "Técnicos trabajando en altura sobre el andamio de la cúpula del edificio La Inmobiliaria",
     "size": "portrait",
-    "link": ""
+    "proyecto": "cupula-la-inmobiliaria"
   },
   {
-    "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria04.jpg",
-    "title": "Restauración de la cúpula de La Inmobiliaria",
-    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "image": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-04.jpg",
+    "image_sm": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-04-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Restauración de la cúpula oeste del edificio La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · Av. de Mayo, CABA",
+    "alt": "Técnico en acceso por cuerdas sobre fachada patrimonial de Avenida de Mayo, con cúpula al fondo",
     "size": "portrait",
-    "link": ""
+    "proyecto": "cupula-la-inmobiliaria"
   },
   {
-    "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria05.jpg",
-    "title": "Restauración de la cúpula de La Inmobiliaria",
-    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "image": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-05.jpg",
+    "image_sm": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-05-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Restauración de la cúpula oeste del edificio La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · Av. de Mayo, CABA",
+    "alt": "Cúpula roja del edificio La Inmobiliaria después de la restauración",
     "size": "portrait",
+    "proyecto": "cupula-la-inmobiliaria",
     "link": "https://www.clarin.com/ciudades/cupula-hace-30-anos-partio-rayo-color-faro-avenida-mayo_0_uQVPFZTJS3.html"
   },
   {
-    "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria06.jpg",
-    "title": "Restauración de la cúpula de La Inmobiliaria",
-    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "image": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-06.jpg",
+    "image_sm": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-06-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Restauración de la cúpula oeste del edificio La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · Av. de Mayo, CABA",
+    "alt": "Técnico suspendido con cuerdas junto a ornamentos de fachada patrimonial en Avenida de Mayo",
     "size": "portrait",
-    "link": ""
+    "proyecto": "cupula-la-inmobiliaria"
   },
   {
-    "image": "images/galeria/Restauracion-cupula-oetste-edf-la-inmobiliaria07.jpg",
-    "title": "Restauración de la cúpula de La Inmobiliaria",
-    "description": "Restauración patrimonial 2021, destacada por Clarín · CABA",
+    "image": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-07.jpg",
+    "image_sm": "images/galeria/restauracion-cupula-edificio-la-inmobiliaria-07-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Restauración de la cúpula oeste del edificio La Inmobiliaria",
+    "description": "Restauración patrimonial 2021, destacada por Clarín · Av. de Mayo, CABA",
+    "alt": "Detalle del tambor y los ventanales de la cúpula del edificio La Inmobiliaria restaurada",
     "size": "portrait",
-    "link": ""
+    "proyecto": "cupula-la-inmobiliaria"
   },
   {
-    "image": "images/galeria/Bancamiga-Caracas-desinstalación-de-aviso 1.jpg",
-    "title": "Bancamiga Caracas, desinstalación de aviso corporativo",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/desinstalacion-aviso-corporativo-acceso-por-cuerdas-caracas-01.jpg",
+    "image_sm": "images/galeria/desinstalacion-aviso-corporativo-acceso-por-cuerdas-caracas-01-800.jpg",
+    "width": 539,
+    "height": 960,
+    "title": "Desinstalación de aviso corporativo en altura",
+    "description": "Acceso por cuerdas en fachada de gran altura · Caracas, Venezuela",
+    "alt": "Técnico descendiendo con cuerdas por fachada de edificio en altura para desinstalar un aviso corporativo",
+    "size": "portrait",
+    "proyecto": "aviso-corporativo-caracas"
   },
   {
-    "image": "images/galeria/Bancamiga-Caracas-desinstalación-de-aviso.jpg",
-    "title": "Bancamiga Caracas, desinstalación de aviso corporativo",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/desinstalacion-aviso-corporativo-acceso-por-cuerdas-caracas-02.jpg",
+    "image_sm": "images/galeria/desinstalacion-aviso-corporativo-acceso-por-cuerdas-caracas-02-800.jpg",
+    "width": 899,
+    "height": 1600,
+    "title": "Desinstalación de aviso corporativo en altura",
+    "description": "Acceso por cuerdas en fachada de gran altura · Caracas, Venezuela",
+    "alt": "Técnico en acceso por cuerdas trabajando sobre fachada de edificio alto con vista a la avenida",
+    "size": "portrait",
+    "proyecto": "aviso-corporativo-caracas"
   },
   {
-    "image": "images/galeria/Desinstalacion-equipos-climatización2.jpg",
+    "image": "images/galeria/desinstalacion-equipos-climatizacion-acceso-por-cuerdas-02.jpg",
+    "image_sm": "images/galeria/desinstalacion-equipos-climatizacion-acceso-por-cuerdas-02-800.jpg",
+    "width": 900,
+    "height": 1600,
     "title": "Desinstalación de equipos de climatización",
-    "description": "",
-    "size": "portrait"
+    "description": "Retiro de equipos en fachada mediante acceso por cuerdas",
+    "alt": "Técnico en cuerdas retirando un equipo de climatización a través de un vano en fachada",
+    "size": "portrait",
+    "proyecto": "climatizacion"
   },
   {
-    "image": "images/galeria/Desinstalación-equipo-de-aire- acondicionado.jpg",
+    "image": "images/galeria/desinstalacion-aire-acondicionado-fachada-acceso-por-cuerdas.jpg",
+    "image_sm": "images/galeria/desinstalacion-aire-acondicionado-fachada-acceso-por-cuerdas-800.jpg",
+    "width": 900,
+    "height": 1600,
     "title": "Desinstalación de equipo de aire acondicionado",
-    "description": "",
-    "size": "portrait"
+    "description": "Retiro de equipo en fachada de edificio residencial",
+    "alt": "Técnico suspendido con cuerdas en fachada de edificio residencial retirando un equipo de aire acondicionado",
+    "size": "portrait",
+    "proyecto": "climatizacion"
   },
   {
-    "image": "images/galeria/Desinstalación-equipos-climatización.jpg",
+    "image": "images/galeria/desinstalacion-equipos-climatizacion-acceso-por-cuerdas-01.jpg",
+    "image_sm": "images/galeria/desinstalacion-equipos-climatizacion-acceso-por-cuerdas-01-800.jpg",
+    "width": 900,
+    "height": 1600,
     "title": "Desinstalación de equipos de climatización",
-    "description": "",
-    "size": "portrait"
+    "description": "Retiro de equipos en fachada mediante acceso por cuerdas",
+    "alt": "Técnico en acceso por cuerdas bajando un equipo de climatización por la fachada",
+    "size": "portrait",
+    "proyecto": "climatizacion"
   },
   {
-    "image": "images/galeria/albañileria-belgrano-pozo-aire-luz .jpeg",
-    "title": "Albañilería en Belgrano, pozo de aire y luz",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/albanileria-pozo-aire-luz-acceso-por-cuerdas-belgrano-01.jpg",
+    "image_sm": "images/galeria/albanileria-pozo-aire-luz-acceso-por-cuerdas-belgrano-01-800.jpg",
+    "width": 900,
+    "height": 1600,
+    "title": "Albañilería en pozo de aire y luz",
+    "description": "Reparación de muros en pozo de aire y luz · Belgrano, CABA",
+    "alt": "Técnico en acceso por cuerdas reparando muros de un pozo de aire y luz en Belgrano",
+    "size": "portrait",
+    "proyecto": "pozo-belgrano"
   },
   {
-    "image": "images/galeria/albañileria-belgrano-pozo-aire-luz-2.jpeg",
-    "title": "Albañilería en Belgrano, pozo de aire y luz",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/albanileria-pozo-aire-luz-acceso-por-cuerdas-belgrano-02.jpg",
+    "image_sm": "images/galeria/albanileria-pozo-aire-luz-acceso-por-cuerdas-belgrano-02-800.jpg",
+    "width": 900,
+    "height": 1600,
+    "title": "Albañilería en pozo de aire y luz",
+    "description": "Reparación de muros en pozo de aire y luz · Belgrano, CABA",
+    "alt": "Vista cenital de trabajo de albañilería con cuerdas en pozo de aire y luz, Belgrano",
+    "size": "portrait",
+    "proyecto": "pozo-belgrano"
   },
   {
-    "image": "images/galeria/cambio-de-lona-bingo-averellaneda.png",
-    "title": "Cambio de lona, Bingo Avellaneda",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/cambio-lona-publicitaria-altura-avellaneda.jpg",
+    "image_sm": "images/galeria/cambio-lona-publicitaria-altura-avellaneda-800.jpg",
+    "width": 707,
+    "height": 727,
+    "title": "Cambio de lona publicitaria en altura",
+    "description": "Recambio de lona en marquesina de gran formato · Avellaneda",
+    "alt": "Técnico en cuerdas realizando el cambio de una lona publicitaria de gran formato en Avellaneda",
+    "size": "portrait",
+    "proyecto": "lona-avellaneda"
   },
   {
-    "image": "images/galeria/fachada-pintura.jpg",
+    "image": "images/galeria/pintura-fachada-edificio-residencial-caba.jpg",
+    "image_sm": "images/galeria/pintura-fachada-edificio-residencial-caba-800.jpg",
+    "width": 506,
+    "height": 900,
     "title": "Pintura de fachada",
     "description": "Trabajo en fachada de edificio residencial · CABA",
-    "size": "portrait"
+    "alt": "Técnicos en acceso por cuerdas pintando la fachada de un edificio residencial en CABA",
+    "size": "portrait",
+    "proyecto": "pintura-fachada-caba"
   },
   {
-    "image": "images/galeria/hidrolavado-medianera-villa-urquiza.jpeg",
-    "title": "Hidrolavado de medianera, Villa Urquiza",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/hidrolavado-medianera-villa-urquiza.jpg",
+    "image_sm": "images/galeria/hidrolavado-medianera-villa-urquiza-800.jpg",
+    "width": 1204,
+    "height": 1600,
+    "title": "Hidrolavado de medianera",
+    "description": "Limpieza previa a la impermeabilización · Villa Urquiza, CABA",
+    "alt": "Técnico en cuerdas realizando hidrolavado de medianera en Villa Urquiza",
+    "size": "portrait",
+    "proyecto": "medianera-villa-urquiza"
   },
   {
-    "image": "images/galeria/impermeabilización-de-medianeras-monte-castro.jpeg",
-    "title": "Impermeabilización de medianeras, Monte Castro",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/impermeabilizacion-medianera-monte-castro-01.jpg",
+    "image_sm": "images/galeria/impermeabilizacion-medianera-monte-castro-01-800.jpg",
+    "width": 900,
+    "height": 1600,
+    "title": "Impermeabilización de medianeras",
+    "description": "Medianera de edificio en altura · Monte Castro, CABA",
+    "alt": "Técnicos en acceso por cuerdas impermeabilizando la medianera de un edificio en Monte Castro",
+    "size": "portrait",
+    "proyecto": "medianeras-monte-castro"
   },
   {
-    "image": "images/galeria/impermeabilización-de-medianeras-monte-castro2.jpeg",
-    "title": "Impermeabilización de medianeras, Monte Castro",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/impermeabilizacion-medianera-monte-castro-02.jpg",
+    "image_sm": "images/galeria/impermeabilizacion-medianera-monte-castro-02-800.jpg",
+    "width": 900,
+    "height": 1600,
+    "title": "Impermeabilización de medianeras",
+    "description": "Medianera de edificio en altura · Monte Castro, CABA",
+    "alt": "Impermeabilización de medianera con acceso por cuerdas, sin andamios, en Monte Castro",
+    "size": "portrait",
+    "proyecto": "medianeras-monte-castro"
   },
   {
-    "image": "images/galeria/impermeabilización-de-medianeras-monte-castro3.jpg",
-    "title": "Impermeabilización de medianeras, Monte Castro",
-    "description": "",
-    "size": "landscape"
+    "image": "images/galeria/impermeabilizacion-medianera-monte-castro-03.jpg",
+    "image_sm": "images/galeria/impermeabilizacion-medianera-monte-castro-03-800.jpg",
+    "width": 1280,
+    "height": 720,
+    "title": "Impermeabilización de medianeras",
+    "description": "Medianera de edificio en altura · Monte Castro, CABA",
+    "alt": "Vista general de medianera en impermeabilización con técnicos en cuerdas, Monte Castro",
+    "size": "landscape",
+    "proyecto": "medianeras-monte-castro"
   },
   {
-    "image": "images/galeria/impermeabilización-de-medianeras-villa-urquiza.jpg",
-    "title": "Impermeabilización de medianeras, Villa Urquiza",
-    "description": "",
-    "size": "landscape"
+    "image": "images/galeria/impermeabilizacion-medianera-villa-urquiza.jpg",
+    "image_sm": "images/galeria/impermeabilizacion-medianera-villa-urquiza-800.jpg",
+    "width": 1600,
+    "height": 1200,
+    "title": "Impermeabilización de medianera",
+    "description": "Medianera de edificio · Villa Urquiza, CABA",
+    "alt": "Técnico en acceso por cuerdas aplicando impermeabilizante en medianera de Villa Urquiza",
+    "size": "landscape",
+    "proyecto": "medianera-villa-urquiza"
   },
   {
-    "image": "images/galeria/impermeabilización-terraza-caboto2.jpeg",
-    "title": "Impermeabilización de terraza, Caboto",
-    "description": "",
-    "size": "landscape"
+    "image": "images/galeria/impermeabilizacion-terraza-caboto-antes.jpg",
+    "image_sm": "images/galeria/impermeabilizacion-terraza-caboto-antes-800.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Impermeabilización de terraza · antes",
+    "description": "Estado de la cubierta antes de intervenir · Caboto",
+    "alt": "Terraza con membrana deteriorada antes de la impermeabilización",
+    "size": "landscape",
+    "proyecto": "terraza-caboto"
   },
   {
-    "image": "images/galeria/impermeablización-terraza-caboto.jpeg",
-    "title": "Impermeabilización de terraza, Caboto",
-    "description": "",
-    "size": "landscape"
+    "image": "images/galeria/impermeabilizacion-terraza-caboto-despues.jpg",
+    "image_sm": "images/galeria/impermeabilizacion-terraza-caboto-despues-800.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Impermeabilización de terraza · después",
+    "description": "Cubierta impermeabilizada y terminada · Caboto",
+    "alt": "Terraza impermeabilizada con acabado rojo terminado, después de la intervención",
+    "size": "landscape",
+    "proyecto": "terraza-caboto"
   },
   {
-    "image": "images/galeria/instalación-ductos-de-extracción (2).jpeg",
+    "image": "images/galeria/instalacion-ducto-extraccion-altura-01.jpg",
+    "image_sm": "images/galeria/instalacion-ducto-extraccion-altura-01-800.jpg",
+    "width": 1200,
+    "height": 1600,
     "title": "Instalación de ductos de extracción",
-    "description": "",
-    "size": "portrait"
+    "description": "Montaje de conducto sobre muro en altura",
+    "alt": "Técnicos montando un ducto de extracción de acero sobre muro exterior en altura",
+    "size": "portrait",
+    "proyecto": "ductos-extraccion"
   },
   {
-    "image": "images/galeria/instalación-ductos-de-extracción.jpeg",
+    "image": "images/galeria/instalacion-ducto-extraccion-altura-02.jpg",
+    "image_sm": "images/galeria/instalacion-ducto-extraccion-altura-02-800.jpg",
+    "width": 899,
+    "height": 1599,
     "title": "Instalación de ductos de extracción",
-    "description": "",
-    "size": "portrait"
+    "description": "Montaje de conducto sobre fachada",
+    "alt": "Técnico en altura fijando un ducto de extracción vertical sobre fachada de edificio",
+    "size": "portrait",
+    "proyecto": "ductos-extraccion"
   },
   {
-    "image": "images/galeria/instalación-equipos-climatización.jpg",
+    "image": "images/galeria/instalacion-equipos-climatizacion-fachada-acceso-por-cuerdas.jpg",
+    "image_sm": "images/galeria/instalacion-equipos-climatizacion-fachada-acceso-por-cuerdas-800.jpg",
+    "width": 1200,
+    "height": 1600,
     "title": "Instalación de equipos de climatización",
-    "description": "",
-    "size": "portrait"
+    "description": "Montaje de unidades exteriores en fachada",
+    "alt": "Técnico en acceso por cuerdas instalando unidades de aire acondicionado en fachada de edificio",
+    "size": "portrait",
+    "proyecto": "climatizacion"
   },
   {
-    "image": "images/galeria/instalación-gigantografia-en-medianera-san-isidro (2).jpeg",
-    "title": "Instalación de gigantografía en medianera, San Isidro",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/instalacion-gigantografia-medianera-san-isidro-01.jpg",
+    "image_sm": "images/galeria/instalacion-gigantografia-medianera-san-isidro-01-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Instalación de gigantografía en medianera",
+    "description": "Lona de gran formato en medianera · San Isidro",
+    "alt": "Gigantografía instalada en la medianera de un edificio en San Isidro",
+    "size": "portrait",
+    "proyecto": "gigantografia-san-isidro"
   },
   {
-    "image": "images/galeria/instalación-gigantografia-en-medianera-san-isidro (3).jpeg",
-    "title": "Instalación de gigantografía en medianera, San Isidro",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/instalacion-gigantografia-medianera-san-isidro-02.jpg",
+    "image_sm": "images/galeria/instalacion-gigantografia-medianera-san-isidro-02-800.jpg",
+    "width": 899,
+    "height": 1599,
+    "title": "Instalación de gigantografía en medianera",
+    "description": "Lona de gran formato en medianera · San Isidro",
+    "alt": "Técnicos en cuerdas tensando una gigantografía sobre medianera en San Isidro",
+    "size": "portrait",
+    "proyecto": "gigantografia-san-isidro"
   },
   {
-    "image": "images/galeria/instalación-gigantografia-en-medianera-san-isidro.jpeg",
-    "title": "Instalación de gigantografía en medianera, San Isidro",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/instalacion-gigantografia-medianera-san-isidro-03.jpg",
+    "image_sm": "images/galeria/instalacion-gigantografia-medianera-san-isidro-03-800.jpg",
+    "width": 900,
+    "height": 1600,
+    "title": "Instalación de gigantografía en medianera",
+    "description": "Lona de gran formato en medianera · San Isidro",
+    "alt": "Vista del edificio con la gigantografía en proceso de instalación en San Isidro",
+    "size": "portrait",
+    "proyecto": "gigantografia-san-isidro"
   },
   {
-    "image": "images/galeria/pintura-de-contrafrente-Lascano .png",
-    "title": "Pintura de contrafrente, Lascano",
-    "description": "",
-    "size": "landscape"
+    "image": "images/galeria/pintura-contrafrente-acceso-por-cuerdas-lascano.jpg",
+    "image_sm": "images/galeria/pintura-contrafrente-acceso-por-cuerdas-lascano-800.jpg",
+    "width": 1599,
+    "height": 899,
+    "title": "Pintura de contrafrente",
+    "description": "Contrafrente de edificio en altura · Lascano",
+    "alt": "Técnicos en acceso por cuerdas pintando el contrafrente de un edificio",
+    "size": "landscape",
+    "proyecto": "pintura-lascano"
   },
   {
-    "image": "images/galeria/pintura-de-medianera-cervantes-2.jpeg",
-    "title": "Pintura de medianera, Cervantes",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/pintura-pozo-aire-luz-lascano.jpg",
+    "image_sm": "images/galeria/pintura-pozo-aire-luz-lascano-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Pintura de pozo de aire y luz",
+    "description": "Pozo de aire y luz · Lascano",
+    "alt": "Técnico en cuerdas pintando un pozo de aire y luz, vista cenital",
+    "size": "portrait",
+    "proyecto": "pintura-lascano"
   },
   {
-    "image": "images/galeria/pintura-de-medianera-cervantes-3.jpeg",
-    "title": "Pintura de medianera, Cervantes",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/pintura-medianera-acceso-por-cuerdas-cervantes-01.jpg",
+    "image_sm": "images/galeria/pintura-medianera-acceso-por-cuerdas-cervantes-01-800.jpg",
+    "width": 900,
+    "height": 1600,
+    "title": "Pintura de medianera",
+    "description": "Medianera de edificio · Cervantes",
+    "alt": "Edificio con medianera recién pintada mediante acceso por cuerdas",
+    "size": "portrait",
+    "proyecto": "pintura-cervantes"
   },
   {
-    "image": "images/galeria/pintura-de-pozo-Lascano .jpeg",
-    "title": "Pintura de pozo, Lascano",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/pintura-medianera-acceso-por-cuerdas-cervantes-02.jpg",
+    "image_sm": "images/galeria/pintura-medianera-acceso-por-cuerdas-cervantes-02-800.jpg",
+    "width": 900,
+    "height": 1600,
+    "title": "Pintura de medianera",
+    "description": "Medianera de edificio · Cervantes",
+    "alt": "Dos técnicos en acceso por cuerdas pintando una medianera",
+    "size": "portrait",
+    "proyecto": "pintura-cervantes"
   },
   {
-    "image": "images/galeria/pintura-de-pozo-cervantes-2.jpeg",
-    "title": "Pintura de pozo, Cervantes",
-    "description": "",
-    "size": "portrait"
+    "image": "images/galeria/pintura-pozo-aire-luz-cervantes.jpg",
+    "image_sm": "images/galeria/pintura-pozo-aire-luz-cervantes-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Pintura de pozo de aire y luz",
+    "description": "Pozo de aire y luz · Cervantes",
+    "alt": "Técnicos en cuerdas pintando los muros de un pozo de aire y luz",
+    "size": "portrait",
+    "proyecto": "pintura-cervantes"
   },
   {
-    "image": "images/galeria/preparación-equipo.jpg",
-    "title": "Preparación de equipo",
-    "description": "Briefing de seguridad en azotea previo a descenso",
-    "size": "landscape"
-  },
-  {
-    "image": "images/galeria/sellado-junta.jpg",
+    "image": "images/galeria/sellado-juntas-fachada-vidriada-acceso-por-cuerdas.jpg",
+    "image_sm": "images/galeria/sellado-juntas-fachada-vidriada-acceso-por-cuerdas-800.jpg",
+    "width": 675,
+    "height": 900,
     "title": "Sellado de junta en fachada",
     "description": "Sellado y reparación en fachada de vidrio · CABA",
-    "size": "portrait"
+    "alt": "Técnico en acceso por cuerdas sellando juntas en fachada vidriada de un edificio en CABA",
+    "size": "portrait",
+    "proyecto": "sellado-fachada-vidriada"
+  },
+  {
+    "image": "images/galeria/briefing-seguridad-azotea-trabajo-en-altura.jpg",
+    "image_sm": "images/galeria/briefing-seguridad-azotea-trabajo-en-altura-800.jpg",
+    "width": 900,
+    "height": 675,
+    "title": "Preparación de equipo",
+    "description": "Briefing de seguridad en azotea previo a descenso",
+    "alt": "Equipo de Limones Rope Access en la azotea durante el briefing de seguridad previo al descenso",
+    "size": "landscape",
+    "proyecto": ""
   }
 ]

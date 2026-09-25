@@ -1,0 +1,89 @@
+<!--{
+  "slug": "contacto",
+  "type": "page",
+  "priority": "0.8",
+  "title": "Pedir Presupuesto de Trabajos en Altura en CABA | Limones",
+  "description": "Pedí un relevamiento o presupuesto de trabajos en altura en CABA y GBA. Contanos el problema, adjuntá una foto y te respondemos con los próximos pasos.",
+  "breadcrumb": "Contacto",
+  "label": "Contacto · CABA y GBA",
+  "h1": "Solicitar<br><span class=\"green\">relevamiento</span><br><span class=\"gray\">o presupuesto</span>",
+  "lead": "Contanos qué pasa en el edificio y, si podés, adjuntá una foto. Revisamos la consulta y te respondemos con los próximos pasos: una primera evaluación por fotos o una visita técnica, y después el presupuesto por escrito.",
+  "hero": "briefing-seguridad-azotea-trabajo-en-altura.jpg",
+  "heroCaption": "Equipo de Limones Rope Access antes de un descenso",
+  "waText": "Hola, quiero solicitar un relevamiento o presupuesto",
+  "heroCta": "Escribir por WhatsApp",
+  "heroCta2": "Completar el formulario",
+  "heroCta2Href": "#formulario",
+  "cardKicker": "Contacto",
+  "cardTitle": "Contacto",
+  "cardDesc": "Pedí un relevamiento o presupuesto.",
+  "cardCta": "Contactar"
+}-->
+<div class="sep"></div>
+<section class="sec" id="formulario">
+  <div class="sec-inner contact-grid">
+    <div>
+      <div class="sec-label"><div class="sec-label-line"></div>Formulario</div>
+      <h2 class="sec-title">Contanos el problema</h2>
+      <form class="form" name="contacto" method="POST" action="/gracias/" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+        <input type="hidden" name="form-name" value="contacto">
+        <p class="hidden-field"><label>No completar: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div>
+          <label for="f-nombre">Nombre</label>
+          <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="f-empresa">Empresa o consorcio <span class="opt">(opcional)</span></label>
+          <input id="f-empresa" name="empresa" type="text" autocomplete="organization">
+        </div>
+        <div>
+          <label for="f-tel">Teléfono / WhatsApp</label>
+          <input id="f-tel" name="telefono" type="tel" autocomplete="tel" required>
+        </div>
+        <div>
+          <label for="f-email">Email <span class="opt">(opcional)</span></label>
+          <input id="f-email" name="email" type="email" autocomplete="email">
+        </div>
+        <div>
+          <label for="f-ubicacion">Ubicación (barrio o localidad)</label>
+          <input id="f-ubicacion" name="ubicacion" type="text" placeholder="Ej.: Palermo, CABA" required>
+        </div>
+        <div>
+          <label for="f-tipo">Tipo de problema</label>
+          <select id="f-tipo" name="tipo" required>
+            <option value="">Elegí una opción</option>
+            <option value="fachada">Reparación de fachada / desprendimientos</option>
+            <option value="pintura">Pintura de fachada, contrafrente o medianera</option>
+            <option value="filtraciones">Filtraciones, humedad o impermeabilización</option>
+            <option value="intimacion">Intimación o inspección de fachada</option>
+            <option value="instalacion">Instalación o retiro en altura</option>
+            <option value="patrimonio">Restauración patrimonial</option>
+            <option value="urgencia">Urgencia (riesgo de caída de material)</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="full">
+          <label for="f-desc">Breve descripción</label>
+          <textarea id="f-desc" name="descripcion" placeholder="Qué pasa, en qué parte del edificio, altura aproximada y desde cuándo." required></textarea>
+        </div>
+        <div class="full">
+          <label for="f-foto">Foto del problema <span class="opt">(opcional, hasta 8 MB)</span></label>
+          <input id="f-foto" name="foto" type="file" accept="image/*">
+          <p class="hint" id="foto-hint">Si tenés más fotos o videos, mandalos por WhatsApp después de enviar el formulario.</p>
+        </div>
+        <div class="full">
+          <button type="submit" class="btn-main">Enviar consulta</button>
+          <p class="hint">Te respondemos por WhatsApp o por email. Tus datos se usan solo para responder esta consulta.</p>
+        </div>
+      </form>
+    </div>
+    <aside class="contact-aside">
+      <div class="sec-label"><div class="sec-label-line"></div>Otros canales</div>
+      <p><strong style="color:var(--white)">WhatsApp:</strong> <a href="{{wa:Hola, quiero solicitar un relevamiento o presupuesto}}" target="_blank" rel="noopener">+54 9 11 7134 9126</a></p>
+      <p><strong style="color:var(--white)">Email:</strong> <a href="mailto:limonesropeaccess@gmail.com">limonesropeaccess@gmail.com</a></p>
+      <p><strong style="color:var(--white)">Zona:</strong> Ciudad Autónoma de Buenos Aires y Gran Buenos Aires. Otras zonas, según el proyecto.</p>
+      <p><strong style="color:var(--white)">Qué pasa después:</strong> revisamos la consulta, te pedimos más información si hace falta y coordinamos una evaluación por fotos o una visita técnica. Después enviamos el presupuesto por escrito.</p>
+      <p><strong style="color:var(--white)">¿Urgencia con riesgo para personas?</strong> Primero delimitá la zona y llamá al 103 o al 911. Después, escribinos. <a href="/administradores/desprendimiento-de-fachada/">Ver guía</a>.</p>
+    </aside>
+  </div>
+</section>
