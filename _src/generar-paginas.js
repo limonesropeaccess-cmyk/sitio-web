@@ -243,6 +243,7 @@ function footer() {
   <div class="footer-nav" role="navigation" aria-label="Servicios y recursos">
     <a href="/trabajos-en-altura/">Trabajos en altura</a>
     <a href="/acceso-por-cuerdas/">Acceso por cuerdas</a>
+    <a href="/silleteros/">Silleteros</a>
     <a href="/reparacion-de-fachadas/">Reparación de fachadas</a>
     <a href="/pintura-de-fachadas/">Pintura de fachadas</a>
     <a href="/impermeabilizacion/">Impermeabilización y filtraciones</a>
@@ -280,7 +281,7 @@ function render(p) {
   if (p.parent) { const pp = porSlug[p.parent]; migas.push(`<li><a href="/${pp.slug}/">${esc(pp.breadcrumb)}</a></li>`); }
   migas.push(`<li><span aria-current="page">${esc(p.breadcrumb)}</span></li>`);
   const heroFoto = hero ? `<figure class="page-hero-photo">
-    <img src="/${hero.image}" alt="${esc(hero.alt || hero.title)}" width="${hero.width}" height="${hero.height}" fetchpriority="high" style="object-position:${p.heroPos || 'center'}">
+    <img src="/${hero.image_sm || hero.image}" srcset="/${hero.image_sm || hero.image} 800w, /${hero.image} 1600w" sizes="(max-width: 768px) 100vw, 40vw" alt="${esc(hero.alt || hero.title)}" width="${hero.width}" height="${hero.height}" fetchpriority="high" style="object-position:${p.heroPos || 'center'}">
     <figcaption>${esc(p.heroCaption || hero.title)}</figcaption>
   </figure>` : '';
 
