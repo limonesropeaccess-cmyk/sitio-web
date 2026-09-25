@@ -745,3 +745,14 @@ figure.gal-item { margin: 0; }
 a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
 .skip-link { position: absolute; left: -9999px; top: 8px; z-index: 300; background: var(--green); color: var(--bg); padding: 8px 14px; border-radius: 6px; font-size: 13px; font-weight: 600; }
 .skip-link:focus { left: 8px; }
+
+/* Fix: el contenedor del WhatsApp flotante (con el menú invisible) tapaba
+   la parte inferior de la pantalla y bloqueaba toques en campos y links.
+   Solo el botón y el menú abierto reciben toques. */
+.wa-float { pointer-events: none; }
+.wa-float-btn, .wa-menu.open { pointer-events: auto; }
+.wa-float.hidden .wa-float-btn { pointer-events: none; }
+
+/* Fix iOS: con letra menor a 16px el iPhone hace zoom al tocar cada campo */
+.form input, .form select, .form textarea { font-size: 16px; }
+.form select { -webkit-appearance: none; appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--green) 50%), linear-gradient(135deg, var(--green) 50%, transparent 50%); background-position: calc(100% - 20px) 50%, calc(100% - 14px) 50%; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 40px; }

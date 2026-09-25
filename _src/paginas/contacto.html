@@ -30,23 +30,23 @@
         <p class="hidden-field"><label>No completar: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
         <div>
           <label for="f-nombre">Nombre</label>
-          <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+          <input id="f-nombre" name="nombre" type="text" autocomplete="name" enterkeyhint="next" required>
         </div>
         <div>
           <label for="f-empresa">Empresa o consorcio <span class="opt">(opcional)</span></label>
-          <input id="f-empresa" name="empresa" type="text" autocomplete="organization">
+          <input id="f-empresa" name="empresa" type="text" autocomplete="organization" enterkeyhint="next">
         </div>
         <div>
           <label for="f-tel">Teléfono / WhatsApp</label>
-          <input id="f-tel" name="telefono" type="tel" autocomplete="tel" required>
+          <input id="f-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel" enterkeyhint="next" required>
         </div>
         <div>
           <label for="f-email">Email <span class="opt">(opcional)</span></label>
-          <input id="f-email" name="email" type="email" autocomplete="email">
+          <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" enterkeyhint="next">
         </div>
         <div>
           <label for="f-ubicacion">Ubicación (barrio o localidad)</label>
-          <input id="f-ubicacion" name="ubicacion" type="text" placeholder="Ej.: Palermo, CABA" required>
+          <input id="f-ubicacion" name="ubicacion" type="text" placeholder="Ej.: Palermo, CABA" enterkeyhint="next" required>
         </div>
         <div>
           <label for="f-tipo">Tipo de problema</label>

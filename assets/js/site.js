@@ -47,6 +47,8 @@
   // Formulario de contacto: evento de lead en Analytics/Ads (sin afectar el envío)
   var form = document.querySelector('form[name="contacto"]');
   if (form) {
+    // En la página del formulario no mostramos el WhatsApp flotante
+    if (waFloat) waFloat.style.display = 'none';
     form.addEventListener('submit', function () {
       if (typeof gtag === 'function') gtag('event', 'generate_lead', { form: 'contacto' });
     });
