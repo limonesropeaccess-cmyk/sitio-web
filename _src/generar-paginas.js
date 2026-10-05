@@ -92,15 +92,15 @@ const ICONO_WA = '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentC
 
 function bloqueCta(p) {
   const titulo = p.ctaTitle || '¿Tenés un problema en altura<br>que <span class="g">resolver</span>?';
-  const texto = p.ctaText || 'Mandanos fotos y una breve descripción. Te respondemos con los próximos pasos: diagnóstico por fotos o visita técnica, y presupuesto por escrito.';
+  const texto = p.ctaText || 'Contanos qué pasa en el edificio. Coordinamos una visita técnica sin cargo y, después de ver el edificio, te enviamos el presupuesto por escrito.';
   return `<div class="sep"></div>
 <section class="cta-sec" id="contacto">
   <div class="cta-inner">
     <h2 class="cta-title">${titulo}</h2>
     <p class="cta-sub">${texto}</p>
     <div class="cta-btns">
-      <a href="${esc(wa(p.waText || 'Hola, quiero consultar por un trabajo en altura'))}" target="_blank" rel="noopener" class="btn-main">${ICONO_WA} Enviar fotos por WhatsApp</a>
-      <a href="/contacto/" class="btn-ghost">Solicitar relevamiento con el formulario <span class="arrow">→</span></a>
+      <a href="${esc(wa(p.waText || 'Hola, quiero consultar por un trabajo en altura'))}" target="_blank" rel="noopener" class="btn-main">${ICONO_WA} Consultar por WhatsApp</a>
+      <a href="/contacto/" class="btn-ghost">Pedir visita técnica con el formulario <span class="arrow">→</span></a>
     </div>
     <div class="cta-info">${TEL_VISIBLE} · <a href="mailto:${EMAIL}" style="color:inherit">${EMAIL}</a> · CABA y Gran Buenos Aires</div>
   </div>
@@ -237,19 +237,26 @@ function footer() {
       <a href="/#servicios">Servicios</a>
       <a href="/#nosotros">Nosotros</a>
       <a href="/proyectos/">Proyectos</a>
+      <a href="/como-trabajamos/">Cómo trabajamos</a>
       <a href="/contacto/">Contacto</a>
     </div>
   </div>
   <div class="footer-nav" role="navigation" aria-label="Servicios y recursos">
     <a href="/trabajos-en-altura/">Trabajos en altura</a>
     <a href="/acceso-por-cuerdas/">Acceso por cuerdas</a>
-    <a href="/silleteros/">Silleteros</a>
+    <a href="/silleteros/">¿Buscás silleteros?</a>
     <a href="/reparacion-de-fachadas/">Reparación de fachadas</a>
     <a href="/pintura-de-fachadas/">Pintura de fachadas</a>
     <a href="/impermeabilizacion/">Impermeabilización y filtraciones</a>
     <a href="/mantenimiento-de-edificios/">Mantenimiento de edificios</a>
     <a href="/restauracion-patrimonial/">Restauración patrimonial</a>
     <a href="/instalaciones-en-altura/">Instalaciones en altura</a>
+    <a href="/reparacion-de-balcones/">Reparación de balcones</a>
+    <a href="/limpieza-de-fachadas/">Limpieza de fachadas</a>
+    <a href="/instalacion-aire-acondicionado-en-altura/">Aire acondicionado en altura</a>
+    <a href="/redes-antipalomas/">Redes antipalomas</a>
+    <a href="/carteleria-gigantografias/">Cartelería y gigantografías</a>
+    <a href="/zonas/">Zonas: CABA y GBA</a>
     <a href="/proyectos/">Proyectos</a>
     <a href="/administradores/">Administradores de consorcios</a>
   </div>
@@ -260,12 +267,11 @@ function footer() {
 const SCRIPTS = `<!-- WhatsApp flotante -->
 <div class="wa-float hidden" id="wa-float">
   <div class="wa-menu" id="wa-menu">
-    <div class="wa-menu-title">¿En qué te ayudamos?</div>
-    <a href="${esc(wa('Hola, nos intimaron por el estado de la fachada y necesito asesoramiento'))}" target="_blank" rel="noopener" class="wa-menu-item">¿Te intimaron por el mal estado de la fachada?</a>
-    <a href="${esc(wa('Hola, no sé qué necesita mi edificio para pintar o refaccionar'))}" target="_blank" rel="noopener" class="wa-menu-item">¿No sabés qué necesita tu edificio para pintar o refaccionar?</a>
-    <a href="${esc(wa('Hola, tengo humedad o filtraciones recurrentes'))}" target="_blank" rel="noopener" class="wa-menu-item">¿Tenés humedad, filtraciones o goteras recurrentes?</a>
-    <a href="${esc(wa('Hola, noto grietas o desprendimientos en balcones o frente'))}" target="_blank" rel="noopener" class="wa-menu-item">¿Notás grietas o desprendimientos en balcones o frente?</a>
-    <a href="${esc(wa('Hola, necesito un diagnóstico técnico antes de invertir'))}" target="_blank" rel="noopener" class="wa-menu-item">¿Necesitás un diagnóstico técnico confiable antes de invertir?</a>
+    <div class="wa-menu-title">¿Quién consulta?</div>
+    <a href="${esc(wa('Hola, soy administrador/a de consorcio y quiero coordinar una visita técnica'))}" target="_blank" rel="noopener" class="wa-menu-item">Soy administrador/a de consorcio</a>
+    <a href="${esc(wa('Hola, soy del consejo de propietarios y quiero coordinar una visita técnica'))}" target="_blank" rel="noopener" class="wa-menu-item">Soy del consejo de propietarios</a>
+    <a href="${esc(wa('Hola, consulto por una empresa o institución y quiero coordinar una visita técnica'))}" target="_blank" rel="noopener" class="wa-menu-item">Consulto por una empresa o institución</a>
+    <a href="/como-trabajamos/#vecinos" class="wa-menu-item">Soy vecino/a y quiero avisar un problema</a>
   </div>
   <button class="wa-float-btn" id="wa-toggle" aria-label="Abrir menú de WhatsApp" aria-expanded="false" aria-controls="wa-menu">
     <svg viewBox="0 0 24 24" aria-hidden="true">${ICONO_WA.replace(/^<svg[^>]*>/, '').replace(/<\/svg>$/, '')}</svg>
@@ -317,8 +323,8 @@ ${nav()}
     <h1 class="page-title">${p.h1}</h1>
     ${p.lead ? `<p class="page-lead">${p.lead}</p>` : ''}
     <div class="hero-cta">
-      <a href="${esc(wa(p.waText || 'Hola, quiero consultar por un trabajo en altura'))}" target="_blank" rel="noopener" class="btn-main">${ICONO_WA} ${esc(p.heroCta || 'Enviar fotos del problema')}</a>
-      <a href="${esc(p.heroCta2Href || '/contacto/')}" class="btn-ghost">${esc(p.heroCta2 || 'Solicitar relevamiento')} <span class="arrow">→</span></a>
+      <a href="${esc(wa(p.waText || 'Hola, quiero consultar por un trabajo en altura'))}" target="_blank" rel="noopener" class="btn-main">${ICONO_WA} ${esc(p.heroCta || 'Consultar por WhatsApp')}</a>
+      <a href="${esc(p.heroCta2Href || '/contacto/')}" class="btn-ghost">${esc(p.heroCta2 || 'Pedir visita técnica')} <span class="arrow">→</span></a>
     </div>
   </div>
   ${heroFoto}

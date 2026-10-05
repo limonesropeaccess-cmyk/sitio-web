@@ -2,12 +2,12 @@
   "slug": "contacto",
   "type": "page",
   "priority": "0.8",
-  "title": "Pedir Presupuesto de Trabajos en Altura en CABA | Limones",
-  "description": "Pedí un relevamiento o presupuesto de trabajos en altura en CABA y GBA. Contanos el problema, adjuntá una foto y te respondemos con los próximos pasos.",
+  "title": "Pedir Visita Técnica y Presupuesto de Trabajos en Altura | Limones",
+  "description": "Coordiná una visita técnica sin cargo en CABA y GBA. Presupuestamos a administraciones, consejos de propietarios y empresas, siempre después de ver el edificio.",
   "breadcrumb": "Contacto",
   "label": "Contacto · CABA y GBA",
-  "h1": "Solicitar<br><span class=\"green\">relevamiento</span><br><span class=\"gray\">o presupuesto</span>",
-  "lead": "Contanos qué pasa en el edificio y, si podés, adjuntá una foto. Revisamos la consulta y te respondemos con los próximos pasos: una primera evaluación por fotos o una visita técnica, y después el presupuesto por escrito.",
+  "h1": "Pedir<br><span class=\"green\">visita técnica</span><br><span class=\"gray\">y presupuesto</span>",
+  "lead": "Contanos qué pasa en el edificio y coordinamos una visita técnica sin cargo. No presupuestamos sin ver el edificio: después de la visita enviamos el presupuesto por escrito a la administración, el consejo o la empresa.",
   "hero": "briefing-seguridad-azotea-trabajo-en-altura.jpg",
   "heroCaption": "Equipo de Limones Rope Access antes de un descenso",
   "waText": "Hola, quiero solicitar un relevamiento o presupuesto",
@@ -28,52 +28,82 @@
       <form class="form" name="contacto" method="POST" action="/gracias/" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
         <input type="hidden" name="form-name" value="contacto">
         <p class="hidden-field"><label>No completar: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-        <div>
+        <div class="full">
+          <label for="f-quien">¿Quién consulta?</label>
+          <select id="f-quien" name="quien" required>
+            <option value="">Elegí una opción</option>
+            <option value="administracion">Administración del consorcio</option>
+            <option value="consejo">Consejo de propietarios</option>
+            <option value="empresa">Empresa o institución</option>
+            <option value="vecino">Propietario/a o vecino/a</option>
+          </select>
+        </div>
+        <div class="full" id="aviso-vecino" hidden>
+          <div class="aviso-vecino">
+            <p><strong>Gracias por avisar.</strong> Presupuestamos a pedido de la administración o del consejo de propietarios, que son quienes pueden aprobar el trabajo. Pasales nuestro contacto:</p>
+            <p><a class="btn-main" href="https://wa.me/?text=Te%20paso%20el%20contacto%20de%20Limones%20Rope%20Access%2C%20empresa%20de%20trabajos%20en%20altura%2C%20para%20que%20revisen%20el%20problema%20del%20edificio%3A%20https%3A//www.limonesropeaccess.com/como-trabajamos/" target="_blank" rel="noopener">Compartir con mi administración</a></p>
+            <p class="hint">Si hay riesgo de que caiga material a la vereda o al patio, delimitá la zona y llamá al 103 o al 911. Después avisale a tu administración.</p>
+          </div>
+        </div>
+        <div class="no-vecino">
           <label for="f-nombre">Nombre</label>
           <input id="f-nombre" name="nombre" type="text" autocomplete="name" enterkeyhint="next" required>
         </div>
-        <div>
-          <label for="f-empresa">Empresa o consorcio <span class="opt">(opcional)</span></label>
-          <input id="f-empresa" name="empresa" type="text" autocomplete="organization" enterkeyhint="next">
+        <div class="no-vecino">
+          <label for="f-empresa">Consorcio, administración o empresa</label>
+          <input id="f-empresa" name="empresa" type="text" autocomplete="organization" enterkeyhint="next" required>
         </div>
-        <div>
+        <div class="no-vecino solo-consejo" hidden>
+          <label for="f-admin">Contacto de la administración</label>
+          <input id="f-admin" name="contacto_admin" type="text" placeholder="Nombre y teléfono o email" enterkeyhint="next">
+        </div>
+        <div class="no-vecino solo-consejo" hidden>
+          <label for="f-autorizado">¿La administración está al tanto?</label>
+          <select id="f-autorizado" name="autorizado">
+            <option value="">Elegí una opción</option>
+            <option value="si">Sí</option>
+            <option value="no">Todavía no</option>
+          </select>
+        </div>
+        <div class="no-vecino">
           <label for="f-tel">Teléfono / WhatsApp</label>
           <input id="f-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel" enterkeyhint="next" required>
         </div>
-        <div>
+        <div class="no-vecino">
           <label for="f-email">Email <span class="opt">(opcional)</span></label>
           <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" enterkeyhint="next">
         </div>
-        <div>
-          <label for="f-ubicacion">Ubicación (barrio o localidad)</label>
-          <input id="f-ubicacion" name="ubicacion" type="text" placeholder="Ej.: Palermo, CABA" enterkeyhint="next" required>
+        <div class="no-vecino">
+          <label for="f-ubicacion">Dirección del edificio</label>
+          <input id="f-ubicacion" name="ubicacion" type="text" placeholder="Calle, altura y barrio" enterkeyhint="next" required>
         </div>
-        <div>
-          <label for="f-tipo">Tipo de problema</label>
+        <div class="no-vecino">
+          <label for="f-tipo">Tipo de trabajo</label>
           <select id="f-tipo" name="tipo" required>
             <option value="">Elegí una opción</option>
-            <option value="fachada">Reparación de fachada / desprendimientos</option>
+            <option value="fachada">Reparación de fachada / balcones / desprendimientos</option>
             <option value="pintura">Pintura de fachada, contrafrente o medianera</option>
+            <option value="limpieza">Limpieza o hidrolavado de fachada</option>
             <option value="filtraciones">Filtraciones, humedad o impermeabilización</option>
             <option value="intimacion">Intimación o inspección de fachada</option>
-            <option value="instalacion">Instalación o retiro en altura</option>
+            <option value="instalacion">Instalación o retiro en altura (aire acondicionado, cartelería, redes)</option>
             <option value="patrimonio">Restauración patrimonial</option>
             <option value="urgencia">Urgencia (riesgo de caída de material)</option>
             <option value="otro">Otro</option>
           </select>
         </div>
-        <div class="full">
+        <div class="full no-vecino">
           <label for="f-desc">Breve descripción</label>
           <textarea id="f-desc" name="descripcion" placeholder="Qué pasa, en qué parte del edificio, altura aproximada y desde cuándo." required></textarea>
         </div>
-        <div class="full">
-          <label for="f-foto">Foto del problema <span class="opt">(opcional, hasta 8 MB)</span></label>
+        <div class="full no-vecino">
+          <label for="f-foto">Foto <span class="opt">(opcional, hasta 8 MB)</span></label>
           <input id="f-foto" name="foto" type="file" accept="image/*">
-          <p class="hint" id="foto-hint">Si tenés más fotos o videos, mandalos por WhatsApp después de enviar el formulario.</p>
+          <p class="hint" id="foto-hint">Nos sirve para preparar la visita. El presupuesto lo hacemos siempre después de ver el edificio.</p>
         </div>
-        <div class="full">
+        <div class="full no-vecino">
           <button type="submit" class="btn-main">Enviar consulta</button>
-          <p class="hint">Te respondemos por WhatsApp o por email. Tus datos se usan solo para responder esta consulta.</p>
+          <p class="hint">Visita técnica sin cargo en CABA y GBA. Tus datos se usan solo para responder esta consulta. <a href="/como-trabajamos/">Cómo trabajamos</a>.</p>
         </div>
       </form>
     </div>
@@ -82,8 +112,9 @@
       <p><strong style="color:var(--white)">WhatsApp:</strong> <a href="{{wa:Hola, quiero solicitar un relevamiento o presupuesto}}" target="_blank" rel="noopener">+54 9 11 7134 9126</a></p>
       <p><strong style="color:var(--white)">Email:</strong> <a href="mailto:limonesropeaccess@gmail.com">limonesropeaccess@gmail.com</a></p>
       <p><strong style="color:var(--white)">Zona:</strong> Ciudad Autónoma de Buenos Aires y Gran Buenos Aires. Otras zonas, según el proyecto.</p>
-      <p><strong style="color:var(--white)">Qué pasa después:</strong> revisamos la consulta, te pedimos más información si hace falta y coordinamos una evaluación por fotos o una visita técnica. Después enviamos el presupuesto por escrito.</p>
-      <p><strong style="color:var(--white)">¿Urgencia con riesgo para personas?</strong> Primero delimitá la zona y llamá al 103 o al 911. Después, escribinos. <a href="/administradores/desprendimiento-de-fachada/">Ver guía</a>.</p>
+      <p><strong style="color:var(--white)">Qué pasa después:</strong> te escribimos para coordinar una visita técnica sin cargo. Después de ver el edificio enviamos el presupuesto por escrito. <a href="/como-trabajamos/">Cómo trabajamos</a>.</p>
+      <p><strong style="color:var(--white)">¿Sos vecino/a?</strong> Presupuestamos a pedido de la administración o del consejo. Pasales nuestro contacto.</p>
+      <p><strong style="color:var(--white)">¿Urgencia con riesgo para personas?</strong> Primero delimitá la zona y llamá al 103 o al 911. Después, la administración puede escribirnos para una intervención urgente. <a href="/administradores/desprendimiento-de-fachada/">Ver guía</a>.</p>
     </aside>
   </div>
 </section>

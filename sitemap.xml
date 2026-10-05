@@ -2,22 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.limonesropeaccess.com/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.limonesropeaccess.com/acceso-por-cuerdas/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.limonesropeaccess.com/administradores/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.limonesropeaccess.com/carteleria-gigantografias/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.limonesropeaccess.com/como-trabajamos/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.limonesropeaccess.com/contacto/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -32,22 +42,32 @@
   </url>
   <url>
     <loc>https://www.limonesropeaccess.com/impermeabilizacion/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.limonesropeaccess.com/instalacion-aire-acondicionado-en-altura/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.limonesropeaccess.com/instalaciones-en-altura/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.limonesropeaccess.com/limpieza-de-fachadas/</loc>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.limonesropeaccess.com/mantenimiento-de-edificios/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.limonesropeaccess.com/pintura-de-fachadas/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -61,23 +81,38 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.limonesropeaccess.com/redes-antipalomas/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.limonesropeaccess.com/reparacion-de-balcones/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.limonesropeaccess.com/reparacion-de-fachadas/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.limonesropeaccess.com/restauracion-patrimonial/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.limonesropeaccess.com/silleteros/</loc>
-    <lastmod>2026-09-25</lastmod>
-    <priority>0.9</priority>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.limonesropeaccess.com/trabajos-en-altura/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.limonesropeaccess.com/zonas/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>

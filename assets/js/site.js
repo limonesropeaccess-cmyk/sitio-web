@@ -59,6 +59,25 @@
       var val = decodeURIComponent(m[1]);
       for (var i = 0; i < sel.options.length; i++) if (sel.options[i].value === val) sel.selectedIndex = i;
     }
+    // Filtro: quién consulta. Vecinos → derivación a la administración; consejo → datos de la administración
+    var quien = form.querySelector('select[name="quien"]');
+    var aviso = document.getElementById('aviso-vecino');
+    var setGrupo = function (el, visible) {
+      el.hidden = !visible;
+      var campos = el.querySelectorAll('input, select, textarea, button');
+      for (var k = 0; k < campos.length; k++) campos[k].disabled = !visible;
+    };
+    var aplicarQuien = function () {
+      var v = quien ? quien.value : '';
+      var noVec = form.querySelectorAll('.no-vecino');
+      for (var k = 0; k < noVec.length; k++) {
+        var esConsejo = noVec[k].classList.contains('solo-consejo');
+        setGrupo(noVec[k], v !== 'vecino' && (!esConsejo || v === 'consejo'));
+      }
+      if (aviso) aviso.hidden = v !== 'vecino';
+      if (v === 'vecino' && typeof gtag === 'function') gtag('event', 'consulta_vecino', { form: 'contacto' });
+    };
+    if (quien) { quien.addEventListener('change', aplicarQuien); aplicarQuien(); }
     // Foto: se achica en el celular antes de enviarla (máx. 1600 px, JPEG),
     // así una foto de 5-8 MB sube como ~300 KB y el envío es mucho más rápido.
     var file = form.querySelector('input[type=file]');

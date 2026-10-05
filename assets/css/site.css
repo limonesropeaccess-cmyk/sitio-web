@@ -279,7 +279,7 @@ footer {
 .footer-name { font-family: 'Bebas Neue', sans-serif; font-size: 14px; font-weight: 600; color: var(--white); }
 .footer-name span { color: var(--green); }
 .footer-sub { font-size: 12px; color: var(--gray); margin-top: 2px; }
-.footer-links { display: flex; gap: 2rem; }
+.footer-links { display: flex; flex-wrap: wrap; gap: .6rem 2rem; }
 .footer-links a { font-size: 13px; color: var(--gray); text-decoration: none; transition: color .2s; }
 .footer-links a:hover { color: var(--white); }
 
@@ -756,3 +756,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 /* Fix iOS: con letra menor a 16px el iPhone hace zoom al tocar cada campo */
 .form input, .form select, .form textarea { font-size: 16px; }
 .form select { -webkit-appearance: none; appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--green) 50%), linear-gradient(135deg, var(--green) 50%, transparent 50%); background-position: calc(100% - 20px) 50%, calc(100% - 14px) 50%; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 40px; }
+
+/* Contacto: aviso para vecinos */
+.aviso-vecino { border: 1px solid var(--green); border-radius: 10px; padding: 18px 20px; background: rgba(200,240,0,.05); }
+.aviso-vecino p { margin: 0 0 12px; line-height: 1.55; }
+.aviso-vecino p:last-child { margin-bottom: 0; }
+.form [hidden] { display: none !important; }

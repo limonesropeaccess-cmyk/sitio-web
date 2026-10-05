@@ -395,5 +395,38 @@
     "alt": "Equipo de Limones Rope Access en la azotea durante el briefing de seguridad previo al descenso",
     "size": "landscape",
     "proyecto": ""
+  },
+  {
+    "image": "images/galeria/reparacion-frente-balcon-fisuras-acceso-por-cuerdas-01.jpg",
+    "image_sm": "images/galeria/reparacion-frente-balcon-fisuras-acceso-por-cuerdas-01-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Fisuras en el frente de un balcón",
+    "description": "Diagnóstico previo a la reparación · Acceso por cuerdas",
+    "alt": "Fisuras en el frente de un balcón antes de la reparación, técnicos en acceso por cuerdas",
+    "size": "portrait",
+    "proyecto": "frentes-balcon"
+  },
+  {
+    "image": "images/galeria/reparacion-frente-balcon-corte-controlado-03.jpg",
+    "image_sm": "images/galeria/reparacion-frente-balcon-corte-controlado-03-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Corte controlado sobre la fisura",
+    "description": "Reparación de frente de balcón · Acceso por cuerdas",
+    "alt": "Técnico con casco y arnés haciendo un corte controlado con amoladora sobre la fisura del frente de un balcón",
+    "size": "portrait",
+    "proyecto": "frentes-balcon"
+  },
+  {
+    "image": "images/galeria/reparacion-frente-balcon-retiro-material-flojo-02.jpg",
+    "image_sm": "images/galeria/reparacion-frente-balcon-retiro-material-flojo-02-800.jpg",
+    "width": 1200,
+    "height": 1600,
+    "title": "Retiro del material flojo",
+    "description": "Retiro pieza por pieza, sin arrojar nada · Acceso por cuerdas",
+    "alt": "Técnico en acceso por cuerdas retirando a mano el revoque flojo del frente de un balcón",
+    "size": "portrait",
+    "proyecto": "frentes-balcon"
   }
 ]
