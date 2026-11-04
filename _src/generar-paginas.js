@@ -92,7 +92,7 @@ const ICONO_WA = '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentC
 
 function bloqueCta(p) {
   const titulo = p.ctaTitle || '¿Tenés un problema en altura<br>que <span class="g">resolver</span>?';
-  const texto = p.ctaText || 'Contanos qué pasa en el edificio. Coordinamos una visita técnica sin cargo y, después de ver el edificio, te enviamos el presupuesto por escrito.';
+  const texto = p.ctaText || 'Contanos qué pasa en el edificio. Coordinamos una visita técnica y, después de ver el edificio, te enviamos el presupuesto por escrito. Sin cargo cuando la pide la administración o el consejo autorizado.';
   return `<div class="sep"></div>
 <section class="cta-sec" id="contacto">
   <div class="cta-inner">

@@ -3,11 +3,11 @@
   "type": "page",
   "priority": "0.8",
   "title": "Pedir Visita Técnica y Presupuesto de Trabajos en Altura | Limones",
-  "description": "Coordiná una visita técnica sin cargo en CABA y GBA. Presupuestamos a administraciones, consejos de propietarios y empresas, siempre después de ver el edificio.",
+  "description": "Coordiná una visita técnica en CABA y GBA. Presupuestamos a administraciones, consejos de propietarios y empresas, siempre después de ver el edificio.",
   "breadcrumb": "Contacto",
   "label": "Contacto · CABA y GBA",
   "h1": "Pedir<br><span class=\"green\">visita técnica</span><br><span class=\"gray\">y presupuesto</span>",
-  "lead": "Contanos qué pasa en el edificio y coordinamos una visita técnica sin cargo. No presupuestamos sin ver el edificio: después de la visita enviamos el presupuesto por escrito a la administración, el consejo o la empresa.",
+  "lead": "Contanos qué pasa en el edificio y coordinamos una visita técnica. No presupuestamos sin ver el edificio: después de la visita enviamos el presupuesto por escrito a la administración, el consejo o la empresa.",
   "hero": "briefing-seguridad-azotea-trabajo-en-altura.jpg",
   "heroCaption": "Equipo de Limones Rope Access antes de un descenso",
   "waText": "Hola, quiero solicitar un relevamiento o presupuesto",
@@ -37,6 +37,7 @@
             <option value="empresa">Empresa o institución</option>
             <option value="vecino">Propietario/a o vecino/a</option>
           </select>
+          <p class="hint" id="visita-hint" hidden></p>
         </div>
         <div class="full" id="aviso-vecino" hidden>
           <div class="aviso-vecino">
@@ -58,10 +59,10 @@
           <input id="f-admin" name="contacto_admin" type="text" placeholder="Nombre y teléfono o email" enterkeyhint="next">
         </div>
         <div class="no-vecino solo-consejo" hidden>
-          <label for="f-autorizado">¿La administración está al tanto?</label>
+          <label for="f-autorizado">¿La administración autoriza la visita?</label>
           <select id="f-autorizado" name="autorizado">
             <option value="">Elegí una opción</option>
-            <option value="si">Sí</option>
+            <option value="si">Sí, por escrito</option>
             <option value="no">Todavía no</option>
           </select>
         </div>
@@ -103,7 +104,7 @@
         </div>
         <div class="full no-vecino">
           <button type="submit" class="btn-main">Enviar consulta</button>
-          <p class="hint">Visita técnica sin cargo en CABA y GBA. Tus datos se usan solo para responder esta consulta. <a href="/como-trabajamos/">Cómo trabajamos</a>.</p>
+          <p class="hint">Visita técnica sin cargo cuando la pide la administración o el consejo autorizado; en los demás casos se descuenta del presupuesto aprobado. Tus datos se usan solo para responder esta consulta. <a href="/como-trabajamos/">Cómo trabajamos</a>.</p>
         </div>
       </form>
     </div>
@@ -112,7 +113,7 @@
       <p><strong style="color:var(--white)">WhatsApp:</strong> <a href="{{wa:Hola, quiero solicitar un relevamiento o presupuesto}}" target="_blank" rel="noopener">+54 9 11 7134 9126</a></p>
       <p><strong style="color:var(--white)">Email:</strong> <a href="mailto:limonesropeaccess@gmail.com">limonesropeaccess@gmail.com</a></p>
       <p><strong style="color:var(--white)">Zona:</strong> Ciudad Autónoma de Buenos Aires y Gran Buenos Aires. Otras zonas, según el proyecto.</p>
-      <p><strong style="color:var(--white)">Qué pasa después:</strong> te escribimos para coordinar una visita técnica sin cargo. Después de ver el edificio enviamos el presupuesto por escrito. <a href="/como-trabajamos/">Cómo trabajamos</a>.</p>
+      <p><strong style="color:var(--white)">Qué pasa después:</strong> te escribimos para coordinar una visita técnica. La visita técnica es sin cargo cuando la pide la administración del edificio, o el consejo de propietarios con autorización escrita de la administración. En los demás casos tiene un costo, que se descuenta del presupuesto si se aprueba. Después de ver el edificio enviamos el presupuesto por escrito. <a href="/como-trabajamos/">Cómo trabajamos</a>.</p>
       <p><strong style="color:var(--white)">¿Sos vecino/a?</strong> Presupuestamos a pedido de la administración o del consejo. Pasales nuestro contacto.</p>
       <p><strong style="color:var(--white)">¿Urgencia con riesgo para personas?</strong> Primero delimitá la zona y llamá al 103 o al 911. Después, la administración puede escribirnos para una intervención urgente. <a href="/administradores/desprendimiento-de-fachada/">Ver guía</a>.</p>
     </aside>

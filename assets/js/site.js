@@ -75,6 +75,16 @@
         setGrupo(noVec[k], v !== 'vecino' && (!esConsejo || v === 'consejo'));
       }
       if (aviso) aviso.hidden = v !== 'vecino';
+      var vh = document.getElementById('visita-hint');
+      if (vh) {
+        var txt = {
+          administracion: 'Visita técnica sin cargo: con este pedido de la administración alcanza.',
+          consejo: 'Visita técnica sin cargo si la administración la autoriza por escrito. Si no, tiene un costo que se descuenta del presupuesto si se aprueba.',
+          empresa: 'La visita técnica tiene un costo que se descuenta del presupuesto si se aprueba. Te informamos el valor al coordinar.'
+        }[v];
+        vh.textContent = txt || '';
+        vh.hidden = !txt;
+      }
       if (v === 'vecino' && typeof gtag === 'function') gtag('event', 'consulta_vecino', { form: 'contacto' });
     };
     if (quien) { quien.addEventListener('change', aplicarQuien); aplicarQuien(); }

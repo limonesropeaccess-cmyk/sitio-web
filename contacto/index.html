@@ -12,14 +12,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pedir Visita Técnica y Presupuesto de Trabajos en Altura | Limones</title>
-<meta name="description" content="Coordiná una visita técnica sin cargo en CABA y GBA. Presupuestamos a administraciones, consejos de propietarios y empresas, siempre después de ver el edificio.">
+<meta name="description" content="Coordiná una visita técnica en CABA y GBA. Presupuestamos a administraciones, consejos de propietarios y empresas, siempre después de ver el edificio.">
 <link rel="canonical" href="https://www.limonesropeaccess.com/contacto/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Limones Rope Access">
 <meta property="og:locale" content="es_AR">
 <meta property="og:title" content="Pedir Visita Técnica y Presupuesto de Trabajos en Altura | Limones">
-<meta property="og:description" content="Coordiná una visita técnica sin cargo en CABA y GBA. Presupuestamos a administraciones, consejos de propietarios y empresas, siempre después de ver el edificio.">
+<meta property="og:description" content="Coordiná una visita técnica en CABA y GBA. Presupuestamos a administraciones, consejos de propietarios y empresas, siempre después de ver el edificio.">
 <meta property="og:url" content="https://www.limonesropeaccess.com/contacto/">
 <meta property="og:image" content="https://www.limonesropeaccess.com/images/galeria/briefing-seguridad-azotea-trabajo-en-altura.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -94,7 +94,7 @@
     <div class="breadcrumb" role="navigation" aria-label="Migas de pan"><ol><li><a href="/">Inicio</a></li><li><span aria-current="page">Contacto</span></li></ol></div>
     <div class="hero-label"><div class="hero-label-line"></div>Contacto · CABA y GBA</div>
     <h1 class="page-title">Pedir<br><span class="green">visita técnica</span><br><span class="gray">y presupuesto</span></h1>
-    <p class="page-lead">Contanos qué pasa en el edificio y coordinamos una visita técnica sin cargo. No presupuestamos sin ver el edificio: después de la visita enviamos el presupuesto por escrito a la administración, el consejo o la empresa.</p>
+    <p class="page-lead">Contanos qué pasa en el edificio y coordinamos una visita técnica. No presupuestamos sin ver el edificio: después de la visita enviamos el presupuesto por escrito a la administración, el consejo o la empresa.</p>
     <div class="hero-cta">
       <a href="https://wa.me/5491171349126?text=Hola%2C%20quiero%20solicitar%20un%20relevamiento%20o%20presupuesto" target="_blank" rel="noopener" class="btn-main"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.121 1.527 5.849L0 24l6.34-1.502A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.48-5.073-1.324l-.362-.215-3.763.892.908-3.666-.236-.375A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Escribir por WhatsApp</a>
       <a href="#formulario" class="btn-ghost">Completar el formulario <span class="arrow">→</span></a>
@@ -124,6 +124,7 @@
             <option value="empresa">Empresa o institución</option>
             <option value="vecino">Propietario/a o vecino/a</option>
           </select>
+          <p class="hint" id="visita-hint" hidden></p>
         </div>
         <div class="full" id="aviso-vecino" hidden>
           <div class="aviso-vecino">
@@ -145,10 +146,10 @@
           <input id="f-admin" name="contacto_admin" type="text" placeholder="Nombre y teléfono o email" enterkeyhint="next">
         </div>
         <div class="no-vecino solo-consejo" hidden>
-          <label for="f-autorizado">¿La administración está al tanto?</label>
+          <label for="f-autorizado">¿La administración autoriza la visita?</label>
           <select id="f-autorizado" name="autorizado">
             <option value="">Elegí una opción</option>
-            <option value="si">Sí</option>
+            <option value="si">Sí, por escrito</option>
             <option value="no">Todavía no</option>
           </select>
         </div>
@@ -190,7 +191,7 @@
         </div>
         <div class="full no-vecino">
           <button type="submit" class="btn-main">Enviar consulta</button>
-          <p class="hint">Visita técnica sin cargo en CABA y GBA. Tus datos se usan solo para responder esta consulta. <a href="/como-trabajamos/">Cómo trabajamos</a>.</p>
+          <p class="hint">Visita técnica sin cargo cuando la pide la administración o el consejo autorizado; en los demás casos se descuenta del presupuesto aprobado. Tus datos se usan solo para responder esta consulta. <a href="/como-trabajamos/">Cómo trabajamos</a>.</p>
         </div>
       </form>
     </div>
@@ -199,7 +200,7 @@
       <p><strong style="color:var(--white)">WhatsApp:</strong> <a href="https://wa.me/5491171349126?text=Hola%2C%20quiero%20solicitar%20un%20relevamiento%20o%20presupuesto" target="_blank" rel="noopener">+54 9 11 7134 9126</a></p>
       <p><strong style="color:var(--white)">Email:</strong> <a href="mailto:limonesropeaccess@gmail.com">limonesropeaccess@gmail.com</a></p>
       <p><strong style="color:var(--white)">Zona:</strong> Ciudad Autónoma de Buenos Aires y Gran Buenos Aires. Otras zonas, según el proyecto.</p>
-      <p><strong style="color:var(--white)">Qué pasa después:</strong> te escribimos para coordinar una visita técnica sin cargo. Después de ver el edificio enviamos el presupuesto por escrito. <a href="/como-trabajamos/">Cómo trabajamos</a>.</p>
+      <p><strong style="color:var(--white)">Qué pasa después:</strong> te escribimos para coordinar una visita técnica. La visita técnica es sin cargo cuando la pide la administración del edificio, o el consejo de propietarios con autorización escrita de la administración. En los demás casos tiene un costo, que se descuenta del presupuesto si se aprueba. Después de ver el edificio enviamos el presupuesto por escrito. <a href="/como-trabajamos/">Cómo trabajamos</a>.</p>
       <p><strong style="color:var(--white)">¿Sos vecino/a?</strong> Presupuestamos a pedido de la administración o del consejo. Pasales nuestro contacto.</p>
       <p><strong style="color:var(--white)">¿Urgencia con riesgo para personas?</strong> Primero delimitá la zona y llamá al 103 o al 911. Después, la administración puede escribirnos para una intervención urgente. <a href="/administradores/desprendimiento-de-fachada/">Ver guía</a>.</p>
     </aside>
